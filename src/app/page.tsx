@@ -33,7 +33,7 @@ export default function Home() {
     <Hero/>
     <div className='text-center mt-20'>
     <h1 className="mb-4  text-lg font-extrabold tracking-tight leading-none text-gray-900 md:text-lg lg:text-lg dark:text-white">Do you feel frustrated and overwhelmed that what actually should be the first step of launching a successful beauty business?</h1>
-    <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">You're passionate about beauty, but you procrastinate all day about where to start.
+    <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">You&apos;re are passionate about beauty, but you procrastinate all day about where to start.
 </p>
 <h1 className="mb-4  text-lg font-extrabold tracking-tight leading-none text-bgv-primary md:text-lg lg:text-lg dark:text-white">DOES THIS SOUND LIKE YOU, RIGHT?
 </h1>
@@ -44,6 +44,7 @@ export default function Home() {
   cta.map((cta, index) => {
     return (
       <Cta
+      key={index}
         heading={cta.heading}
         paragraph={cta.paragraph}
         image={cta.image}
