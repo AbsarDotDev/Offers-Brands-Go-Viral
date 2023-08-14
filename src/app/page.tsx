@@ -24,6 +24,12 @@ export default function Home() {
       paragraph:"I do understand why you might be feeling overwhelmed creating a perfect branding kit for your business. It can be a lot of work to put together all of the different pieces, and it can be hard to brand multiple social media in one style and theme. You need a branding kit in different sizes optimized for different platforms, ready to upload so you can start working on more important things in your business.",
       image:"https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
     },
+    {
+      heading:"You are planning & not going anywhere, merging all the tasks & ignoring the important things.",
+      paragraph:"I used to forget the tasks I was supposed to do, always failing to prioritize the most important and least important things that my business needed. Planners with all solutions for your social media & business management can only make you run your business in a manageable way.      ",
+      image:"https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+    },
+
 
     
 

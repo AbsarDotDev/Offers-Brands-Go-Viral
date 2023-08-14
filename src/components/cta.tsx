@@ -17,7 +17,7 @@ export const Cta = ({ heading, paragraph, image, index }: CtaProps) => {
         {isEven ? (
           <>
             <div className="mt-4 md:mt-0 flex flex-col justify-center items-center">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{heading}</h2>
+              <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">{heading}</h2>
               <p className="mb-6 font-light text-gray-500 md:text-base dark:text-gray-400">{paragraph}</p>
             </div>
             <Image className="w-full" src={image} alt="dashboard image" width={1000} height={720} style={{ width: 'auto', height: 'auto' }} />
@@ -26,7 +26,7 @@ export const Cta = ({ heading, paragraph, image, index }: CtaProps) => {
           <>
             <Image className="w-full" src={image} alt="dashboard image" width={1000} height={720} style={{ width: 'auto', height: 'auto' }} />
             <div className="mt-4 md:mt-0 flex flex-col justify-center items-center">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{heading}</h2>
+              <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">{heading}</h2>
               <p className="mb-6 font-light text-gray-500 md:text-base dark:text-gray-400">{paragraph}</p>
             </div>
           </>
