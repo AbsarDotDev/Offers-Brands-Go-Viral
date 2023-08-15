@@ -65,11 +65,11 @@ export default function Home() {
 <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:bg-gray-900">
   <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div className="max-w-screen text-white sm:text-lg md:text-1xl dark:text-gray-400">
-          <h2 className="mb-6 text-5xl tracking-tight font-extrabold text-black drop-shadow-xl dark:text-white">IF YOU'RE FEELING THIS WAY, YOU'RE NOT ALONE.
+          <h2 className="mb-6 text-5xl tracking-tight font-extrabold text-black drop-shadow-xl dark:text-white">IF You&apos;re FEELING THIS WAY, You&apos;re NOT ALONE.
 </h2>
           <p className="mb-4 font-bold">You just need this all-in-one beauty business bundle that will definitely help you initiate & elevate your brand.
 </p>
-          <p className="mb-4 font-medium">Many beauty enthusiasts dream of starting their own brand, but they don't know where to begin. The beauty industry is competitive and ever-changing, and it can be difficult to break through the noise.
+          <p className="mb-4 font-medium">Many beauty enthusiasts dream of starting their own brand, but they don&apos;t know where to begin. The beauty industry is competitive and ever-changing, and it can be difficult to break through the noise.
 </p>
           
       </div>
@@ -78,9 +78,9 @@ export default function Home() {
 <BundleIncludes/>
 <section className='afterBundle pl-5 pr-5'>
     <div className='text-center mt-20'>
-    <h1 className="mb-4 text-lg font-extrabold tracking-tight leading-none text-gray-900 md:text-2xl lg:text-2xl dark:text-white">With my mega bundle, you'll have everything you need to turn your passion for beauty into a successful business.
+    <h1 className="mb-4 text-lg font-extrabold tracking-tight leading-none text-gray-900 md:text-2xl lg:text-2xl dark:text-white">With my mega bundle, you&apos;ll have everything you need to turn your passion for beauty into a successful business.
 </h1>
-    <p className="mb-8 text-lg font-extrabold lg:text-xl dark:text-gray-400"><mark className=' text-red-700'>Don't miss out on this opportunity to take your beauty business to the next level.
+    <p className="mb-8 text-lg font-extrabold lg:text-xl dark:text-gray-400"><mark className=' text-red-700'>don&apos;t miss out on this opportunity to take your beauty business to the next level.
     </mark>
 </p>
 <a href="#" className="relative inline-flex justify-center items-center py-3 px-5 text-2xl font-medium text-center text-white rounded-lg bg-bgv-primary hover:bg-bgv-secondary focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow-md">
@@ -107,10 +107,10 @@ export default function Home() {
 
 </p>
 <ul className="text-gray-600 list-none leading-[40px]">
-  <li className="mb-2 text-gray-700">✅ Create a successful beauty brand that you're passionate about.</li>
-  <li className="mb-2 text-gray-700">✅ Share your love of beauty with the world and make a difference in people's lives.</li>
+  <li className="mb-2 text-gray-700">✅ Create a successful beauty brand that You&apos;re passionate about.</li>
+  <li className="mb-2 text-gray-700">✅ Share your love of beauty with the world and make a difference in people&apos;s lives.</li>
   <li className="mb-2 text-gray-700">✅ Having your vast number of followers on different social media platforms.</li>
-  <li className="mb-2 text-gray-700">✅ Generate a sustainable income that allows you to live the life you've always dreamed of.</li>
+  <li className="mb-2 text-gray-700">✅ Generate a sustainable income that allows you to live the life you&apos;ve always dreamed of.</li>
   <li className="mb-2 text-gray-700">✅ Run your business seamlessly and have more time to spend with your loved ones.</li>
 </ul>
 
