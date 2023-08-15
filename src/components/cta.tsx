@@ -12,7 +12,7 @@ export const Cta = ({ heading, paragraph, image, index }: CtaProps) => {
   const isEven = index % 2 === 1;
 
   return (
-    <section className={`bg-white dark:bg-gray-900 ${isEven ? 'flex-row-reverse' : ''}`}>
+    <section className={`bg-white dark:bg-gray-900 pl-5 pr-5 ${isEven ? 'flex-row-reverse' : ''}`}>
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         {isEven ? (
           <>

@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <>
 
-<section className="bg-white dark:bg-gray-900">
+<section className="bg-white dark:bg-gray-900 pl-5 pr-5">
     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
         <div className="flex flex-col justify-center">
         <h2 className="mb-4 text-lg font-extrabold tracking-tight leading-none text-gray-900 md:text-lg lg:text-lg dark:text-white">All-In-One Beauty Business Bundle
