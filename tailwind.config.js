@@ -19,8 +19,8 @@ module.exports = {
         bgv:{
 primary:"#814944",
 secondary:"#caaca8",
-skyblue:"#8ee0e2",
-pink:"#e9bce2"
+skyblue:"#b5a2f9",
+pink:"#f7c6e7"
 
         },
         border: "hsl(var(--border))",

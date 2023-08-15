@@ -16,78 +16,78 @@ export const BundleIncludes = () => {
 
           {/* Engaging Instagram posts */}
           <div className="flex flex-col mb-8 lg:items-start items-center">
-            <div className="bg-bgv-primary w-full pl-5 rounded-full p-2 flex items-center">
+            <div className="bg-gradient-to-r  from-bgv-pink to-bgv-skyblue w-full pl-5 rounded-full p-2 flex items-center">
               <FaGem className="text-white text-xl mr-2" />
               <h2 className="text-white text-lg title-font font-bold">
                 Engaging Instagram posts
               </h2>
             </div>
-            <p className="leading-relaxed text-base mt-2">
+            <p className="leading-relaxed text-base mt-2 text-start font-light">
               These posts will help you promote your brand and products to your target audience.
             </p>
           </div>
 
           {/* Consent forms */}
           <div className="flex flex-col mb-8 lg:items-start items-center">
-            <div className="bg-bgv-primary w-full pl-5 rounded-full p-2 flex items-center">
+            <div className="bg-gradient-to-r  from-bgv-pink to-bgv-skyblue w-full pl-5 rounded-full p-2 flex items-center">
               <FaFileSignature className="text-white text-xl mr-2" />
               <h2 className="text-white text-lg title-font font-bold">
                 Consent forms
               </h2>
             </div>
-            <p className="leading-relaxed text-base mt-2">
+            <p className="leading-relaxed text-base mt-2 text-start font-light">
               These forms will help you comply with all applicable laws.
             </p>
           </div>
 
           {/* Packaging labels */}
           <div className="flex flex-col mb-8 lg:items-start items-center">
-            <div className="bg-bgv-primary w-full pl-5 rounded-full p-2 flex items-center">
+            <div className="bg-gradient-to-r  from-bgv-pink to-bgv-skyblue w-full pl-5 rounded-full p-2 flex items-center">
               <FaTags className="text-white text-xl mr-2" />
               <h2 className="text-white text-lg title-font font-bold">
                 Packaging labels
               </h2>
             </div>
-            <p className="leading-relaxed text-base mt-2">
+            <p className="leading-relaxed text-base mt-2 text-start font-light">
               These labels will help your products look professional, polished, and stand out on the shelf.
             </p>
           </div>
 
           {/* Business Branding Kit */}
           <div className="flex flex-col mb-8 lg:items-start items-center">
-            <div className="bg-bgv-primary w-full pl-5 rounded-full p-2 flex items-center">
+            <div className="bg-gradient-to-r  from-bgv-pink to-bgv-skyblue w-full pl-5 rounded-full p-2 flex items-center">
               <FaBriefcase className="text-white text-xl mr-2" />
               <h2 className="text-white text-lg title-font font-bold">
                 Business Branding Kit
               </h2>
             </div>
-            <p className="leading-relaxed text-base mt-2">
+            <p className="leading-relaxed text-base mt-2 text-start font-light">
               This kit will help you create a cohesive and professional brand identity.
             </p>
           </div>
 
           {/* Business Planner */}
           <div className="flex flex-col mb-8 lg:items-start items-center">
-            <div className="bg-bgv-primary w-full pl-5 rounded-full p-2 flex items-center">
+            <div className="bg-gradient-to-r  from-bgv-pink to-bgv-skyblue w-full pl-5 rounded-full p-2 flex items-center">
               <FaClipboardList className="text-white text-xl mr-2" />
               <h2 className="text-white text-lg title-font font-bold">
                 Business Planner
               </h2>
             </div>
-            <p className="leading-relaxed text-base mt-2">
+            <p className="leading-relaxed text-base mt-2 text-start font-light">
               This will help you manage your business in the most efficient way.
             </p>
           </div>
 
           {/* Social Media Planner */}
           <div className="flex flex-col mb-8 lg:items-start items-center">
-            <div className="bg-bgv-primary w-full pl-5 rounded-full p-2 flex items-center">
+            <div className="bg-gradient-to-r  from-bgv-pink to-bgv-skyblue w-full pl-5 rounded-full p-2 flex items-center">
               <FaShareAlt className="text-white text-xl mr-2" />
               <h2 className="text-white text-lg title-font font-bold">
                 Social Media Planner
               </h2>
             </div>
-            <p className="leading-relaxed text-base mt-2">
+            <p className="leading-relaxed text-base mt-2 text-start font-light">
               This will help you grow your social presence to attract and engage your followers.
             </p>
           </div>
