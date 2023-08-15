@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Hero } from '../components/hero'
 import { Cta } from '@/components/cta'
 import { BundleIncludes } from '@/components/bundleincludes'
+import { ModeToggle } from '@/components/darkMode'
 
 export default function Home() {
   const cta=[
@@ -37,6 +38,7 @@ export default function Home() {
   ]
   return (
   <main className=''>
+    <ModeToggle/>
     <Hero/>
     <section className='afterHero pl-5 pr-5'>
     <div className='text-center mt-20'>
