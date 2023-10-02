@@ -17,7 +17,8 @@ export function ModeToggle() {
 
   return (
     
-    <DropdownMenu>
+<div data-dial-init className="fixed top-6 right-6 group">
+<DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
           <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
@@ -37,5 +38,8 @@ export function ModeToggle() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
+</div>
+
+   
   )
 }

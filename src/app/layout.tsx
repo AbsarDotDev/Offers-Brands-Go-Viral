@@ -2,9 +2,16 @@ import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
+import localFont from 'next/font/local'
 
 const inter = Inter({ subsets: ['latin'] })
+const montserrat = localFont({
+  src: '../../public/montvar.ttf',
+  display: 'swap',
+  variable: '--font-montvar'
 
+})
 export const metadata: Metadata = {
   title: 'Mega Bundle By Brands Go Viral',
   description: 'Shine through the noise and grow your business having a must-have for all cosmetics brands and estheticians.',
@@ -17,10 +24,13 @@ export default function RootLayout({
 }) {
   return (
 
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={`${inter.className} ${montserrat.className}`}>
+      <body >
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-{children}    </ThemeProvider>
+{children}   
+<Analytics />
+
+ </ThemeProvider>
 </body>
     </html>
   )
