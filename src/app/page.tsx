@@ -135,7 +135,7 @@ export default function Home() {
           <p className="mb-8 text-lg font-extrabold lg:text-xl dark:text-gray-400"><mark className=' text-gray-700 dark:text-red-700'>don&apos;t miss out on this opportunity to take your beauty business to the next level.
           </mark>
           </p>
-          <a href="#" className="relative inline-flex justify-center items-center py-3 px-5 text-base md:text-2xl lg:text-2xl font-medium text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow-md">
+          <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="relative inline-flex justify-center items-center py-3 px-5 text-base md:text-2xl lg:text-2xl font-medium text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow-md">
             <span className="relative z-10">
               YES I AM READY TO ELEVATE MY BUSINESS
             </span>
@@ -143,7 +143,7 @@ export default function Home() {
             <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
             </svg>
-          </a>
+          </Link>
 
 
 
@@ -196,14 +196,14 @@ export default function Home() {
 
             <p className="mb-4 font-bold text-gray-900 dark:text-white">If you&apos;re ready to launch a successful beauty brand, then the Beauty Business Bundle is the perfect resource for you.
             </p>
-            <a href="#" className="relative inline-flex justify-center items-center py-3 px-5 text-base md:text-lg lg:text-lg font-medium text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow-md">
+            <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="relative inline-flex justify-center items-center py-3 px-5 text-base md:text-lg lg:text-lg font-medium text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow-md">
               <span className="relative z-10">
                 Click here to grab it now!            </span>
 
               <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="lg:w-1/2 w-full mb-8 lg:mb-0 rounded-lg overflow-hidden">
             <Image alt="feature" className="object-cover object-center h-full w-full" src="/Elevate your Instagram presence (2).gif" width={460} height={500} />
@@ -320,7 +320,7 @@ export default function Home() {
       </section>
   <Testimonials/>
   <div className="flex flex-col space-y-0 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center my-10">
-                <Link href="#" className="inline-flex justify-center uppercase items-center py-3 px-20 text-xl font-black text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 animate-fade animate-once">
+                <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="inline-flex justify-center uppercase items-center py-3 px-20 text-xl font-black text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 animate-fade animate-once">
                     Yes I Am Wise Enough To Grab This Deal
                     <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
