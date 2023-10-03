@@ -15,6 +15,8 @@ import {
 } from "@/components/ui/accordion"
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
+import SubscribeForm from '@/components/subscribe-form'
+import NewsLetter from '@/components/newsletter'
 
 export default function Home() {
   
@@ -534,13 +536,15 @@ Still Need Help?
 </h2>
 <p className='text-lg text-center leading-8 mt-2 text-gray-800 dark:text-white'>
 If you have any questions please send us a message or drop us an email at <Link href={'mailto:brandsgoviral@gmail.com'}><b className='text-bgv-skyblue'>brandsgoviral@gmail.com</b></Link>, we&apos;d be glad to help you.</p>
-<div className="flex w-full max-w-sm items-center space-x-2 mt-4">
-      <Input type="email" placeholder="Email" />
-      <Button type="submit">Subscribe</Button>
-    </div>
     </div>
   </section>
+  <section className="dark:bg-gray-900 lg:py-10">
+  <div className="px-4 sm:px-6 lg:px-20 w-full flex flex-col items-center">
+  <NewsLetter />
 
+    </div>
+  </section>
+  {/* <SubscribeForm/> */}
 
                 <div className='bg-gray-100 py-5 '><p className='copyrights text-center'>All Rights Reserved &copy; CopyRights 2023 Brands Go Viral
             </p>
