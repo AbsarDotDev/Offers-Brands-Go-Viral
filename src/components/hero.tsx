@@ -40,8 +40,8 @@ a must-have for all cosmetics brands and estheticians.
   "
 /> */}
 
-    <div className='max-w-screen w-full pb-12 flex justify-center'>
-    <iframe height="315" src="https://www.youtube.com/embed/W0nKVR-1oGc?si=Z1k9WIUPCcm0eyyU" className='w-[320px] md:w-[560px]' title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>          
+    <div className='max-w-screen w-full pb-12 flex justify-center rounded-lg'>
+    <iframe src="https://www.youtube.com/embed/W0nKVR-1oGc?si=Z1k9WIUPCcm0eyyU" className='w-full aspect-video max-w-4xl rounded-xl shadow-lg' title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>          
     {/* <video controls poster='/video-thumb.png' className='rounded-lg'><source src='/brandsgoviral_deals_bundle.mp4'></source></video> */}
             {/* <iframe className="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-96 shadow-xl" loading="lazy" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe> */}
         </div>
