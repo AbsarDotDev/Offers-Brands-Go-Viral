@@ -4,7 +4,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
 import localFont from 'next/font/local'
-
+import { Suspense } from 'react'
+import { FacebookPixelEvents } from '../components/pixel-events'
 const inter = Inter({ subsets: ['latin'] })
 const montserrat = localFont({
   src: '../../public/montvar.ttf',
@@ -28,6 +29,9 @@ export default function RootLayout({
       <body >
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 {children}   
+<Suspense fallback={null}>
+          <FacebookPixelEvents />
+        </Suspense>
 <Analytics />
 
  </ThemeProvider>
