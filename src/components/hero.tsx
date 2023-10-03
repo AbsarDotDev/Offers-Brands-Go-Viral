@@ -35,13 +35,14 @@ a must-have for all cosmetics brands and estheticians.
     {/* <LiteYouTubeEmbed
   aspectHeight={9}
   aspectWidth={16}
-  id="W0nKVR-1oGc"
+  id="Z1k9WIUPCcm0eyyU"
   title="Brands Go Viral - Canva Editable Esthetician's Branding & Business Templates
   "
 /> */}
 
-    <div className='max-w-screen w-full pb-12'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/W0nKVR-1oGc?si=Z1k9WIUPCcm0eyyU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>            <video controls poster='/video-thumb.png' className='rounded-lg'><source src='/brandsgoviral_deals_bundle.mp4'></source></video>
+    <div className='max-w-screen w-full pb-12 flex justify-center'>
+    <iframe height="315" src="https://www.youtube.com/embed/W0nKVR-1oGc?si=Z1k9WIUPCcm0eyyU" className='w-[320px] md:w-[560px]' title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>          
+    {/* <video controls poster='/video-thumb.png' className='rounded-lg'><source src='/brandsgoviral_deals_bundle.mp4'></source></video> */}
             {/* <iframe className="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-96 shadow-xl" loading="lazy" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe> */}
         </div>
 </section>

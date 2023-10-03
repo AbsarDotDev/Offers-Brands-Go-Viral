@@ -175,11 +175,11 @@ export default function Home() {
         </div>
       </section>
       <section >
-        <Image src={'/10xproductivity.png'} alt='bradnsgoviral 10x productivity' width={1920} height={1080} />
+        <Image src={'/10xproductivity.png'} alt='bradnsgoviral 10x productivity' width={1920} height={1080} className='w-full'/>
       </section>
 
       <section className=" bg-gradient-to-r  from-bgv-pink to-bgv-skyblue dark:to-transparent dark:from-transparent dark:bg-gray-900 p-5">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 flex flex-col md:flex-row lg:flex-row-reverse gap-10">
+        <div className="py-8 px-4 mx-auto max-w-screen-2xl lg:py-16 lg:px-6 flex flex-col md:flex-row lg:flex-row-reverse gap-10">
           <div className="lg:w-1/2 w-full text-white sm:text-lg md:text-1xl dark:text-gray-400 bg-white dark:bg-gray-800 p-10 rounded-xl">
             <h6 className="mb-6 text-lg tracking-tight font-extrabold text-black drop-shadow-xl italic dark:text-white">Elevate your Instagram presence, streamline your business with customizable consent forms, captivate customers with professional packaging labels, and unlock the power of a comprehensive branding kit – all in one game-changing package.
 
@@ -196,8 +196,8 @@ export default function Home() {
 
             <p className="mb-4 font-bold text-gray-900 dark:text-white">If you&apos;re ready to launch a successful beauty brand, then the Beauty Business Bundle is the perfect resource for you.
             </p>
-            <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="relative inline-flex justify-center items-center py-3 px-5 text-base md:text-lg lg:text-lg font-medium text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow-md">
-              <span className="relative z-10">
+            <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="relative w-full inline-flex justify-center items-center py-3 px-5 text-base md:text-lg lg:text-lg font-medium text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow-md">
+              <span className="relative z-10 text-3xl">
                 Click here to grab it now!            </span>
 
               <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -212,7 +212,7 @@ export default function Home() {
       </section>
 
       <section className='px-10 dark:bg-gray-900 py-12'>
-        <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">What you&apos;ll get in the  Beautypreneur Mega Bundle
+        <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-center text-gray-900 md:text-5xl lg:text-6xl dark:text-white">What you&apos;ll get in the  Beautypreneur Mega Bundle
         </h1>
         <Image src={'/MEGA BUNDLE THUMBNAIL.png'} alt='bradnsgoviral 10x productivity' width={1920} height={1080} className='m-auto py-10' />
         <h1 className="my-4 text-3xl text-center font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white"><span className="text-transparent bg-clip-text bg-gradient-to-r from-bgv-pink to-bgv-skyblue">The Only Mega Bundle You&apos;ll Ever Need!</span>
@@ -248,7 +248,7 @@ export default function Home() {
 
       </div>
       <div className="lg:w-1/2 w-full mb-8 lg:mb-0 rounded-lg overflow-hidden">
-        <Image alt="feature" src={'/Bonus Blog Planner - Listing.png'} className='w-[520px] h-[400px] object-cover' width={500} height={400} />
+        <Image alt="feature" src={'/Bonus Blog Planner.png'} className='w-[520px] h-[400px] object-cover' width={500} height={400} />
       </div>
     </div>
         {/* <div className="py-2 px-4 mx-auto max-w-screen-xl lg:px-6 flex flex-col md:flex-row lg:flex-row gap-10">
@@ -275,7 +275,7 @@ export default function Home() {
           <h1 className=" mb-2 text-gray-900 font-black  dark:text-white text-3xl">✅  Lifetime Access </h1>
           <h1 className=" mb-2 text-gray-900 font-black dark:text-white text-3xl">✅  Assistance in Editing</h1>
           <h1 className=" mb-2 text-gray-900 font-black dark:text-white text-3xl">✅  Canva Editability</h1>
-          <h1 className=" mb-2 text-gray-900 font-black dark:text-white text-3xl">✅  Instant Downlaod</h1>
+          <h1 className=" mb-2 text-gray-900 font-black dark:text-white text-3xl">✅  Instant Download</h1>
 
         </div>
         <div className="flex flex-row items-center justify-center gap-x-3 py-10">
@@ -285,7 +285,7 @@ export default function Home() {
         <h1 className="mb-4 text-4xl text-center font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">YOU WILL GET THIS JUST IN
           <span className="text-transparent bg-clip-text bg-gradient-to-r to-bgv-pink from-bgv-skyblue"> $99 </span>
         </h1>
-        <h1 className="mb-4  text-center text-4xl font-extrabold tracking-tight leading-none text-red-600 md:text-5xl lg:text-6xl ">Only valid till 15th October.
+        <h1 className="mb-4  text-center text-4xl font-extrabold tracking-tight leading-none text-red-600 md:text-5xl lg:text-6xl ">Only valid till 15th November.
         </h1>
 
       </section>
