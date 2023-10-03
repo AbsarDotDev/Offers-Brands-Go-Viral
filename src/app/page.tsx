@@ -13,33 +13,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-
-export function AccordionDemo() {
-  return (
-    <Accordion type="single" collapsible className="w-full">
-      <AccordionItem value="item-1">
-        <AccordionTrigger>Is it accessible?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-2">
-        <AccordionTrigger>Is it styled?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It comes with default styles that matches the other
-          components&apos; aesthetic.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-3">
-        <AccordionTrigger>Is it animated?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It&apos;s animated by default, but you can disable it if you
-          prefer.
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
-  )
-}
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 
 export default function Home() {
   
@@ -353,9 +328,17 @@ export default function Home() {
         </div>
       </section>
   <Testimonials/>
-
+  <div className="flex flex-col space-y-0 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center my-10">
+                <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="inline-flex justify-center uppercase items-center py-3 px-20 text-xl font-black text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 animate-fade animate-once">
+                    Yes I Am Wise Enough To Grab This Deal
+                    <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </Link>
+             
+            </div>
   {/*Roadmap  Start*/}
-  <section className=" dark:bg-gray-900 py-20 lg:py-0">
+  <section className=" dark:bg-gray-900 py-20 lg:py-10">
   <div className="px-4 bloc mx-auto max-w-7xl sm:px-6 lg:px-8">
   <div className="text-center my-10">
  <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">Here&apos;s how it works:
@@ -421,66 +404,35 @@ export default function Home() {
   {/* Roadmap End */}
 
   {/* Specs Start */}
-  {/* <section className="dark:bg-gray-900 py-20 lg:py-10 mx-auto">
-  <div className="flex justify-center">
-    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 text-center">
-      <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">SPECIFICATIONS</h2>
-    </div>
-  </div>
-  <div className="flex justify-center py-14">
-    <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
-      <li className="">
-        <p className='text-2xl text-gray-800'>✅ Instant download</p>
-      </li>
-      <li className="">
-        <p className='text-2xl text-gray-800'>✅ Customizable in Canva</p>
-      </li>
-      <li className="">
-        <p className='text-2xl text-gray-800'>✅ Easy to edit</p>
-      </li>
-      <li className="">
-        <p className='text-2xl text-gray-800'>✅ Download and use multiple times</p>
-      </li>
-      <li className="">
-        <p className='text-2xl text-gray-800'>✅ Lifetime access to your template</p>
-      </li>
-      <li className="">
-        <p className='text-2xl text-gray-800'>✅ Print at home</p>
-      </li>
-    </ul>
-  </div>
-</section> */}
 
-
-  {/* Specs End */}
-  <section className="dark:bg-gray-900 my-20 lg:py-10">
+  <section className="dark:bg-gray-900 lg:py-10">
   <div className="px-4 flex justify-between sm:px-6 lg:px-20 w-full">
   <div className='w-1/2'>
       <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">SPECIFICATIONS</h2>
   <ul className="space-y-6 text-left text-gray-500 dark:text-gray-400 mt-6">
       <li className="">
-        <p className='text-2xl text-gray-800'>✅ Instant download</p>
+        <p className='text-2xl text-gray-800 dark:text-white'>✅ Instant download</p>
       </li>
       <li className="">
-        <p className='text-2xl text-gray-800'>✅ Customizable in Canva</p>
+        <p className='text-2xl text-gray-800 dark:text-white'>✅ Customizable in Canva</p>
       </li>
       <li className="">
-        <p className='text-2xl text-gray-800'>✅ Easy to edit</p>
+        <p className='text-2xl text-gray-800 dark:text-white'>✅ Easy to edit</p>
       </li>
       <li className="">
-        <p className='text-2xl text-gray-800'>✅ Download and use multiple times</p>
+        <p className='text-2xl text-gray-800 dark:text-white'>✅ Download and use multiple times</p>
       </li>
       <li className="">
-        <p className='text-2xl text-gray-800'>✅ Lifetime access to your template</p>
+        <p className='text-2xl text-gray-800 dark:text-white'>✅ Lifetime access to your template</p>
       </li>
       <li className="">
-        <p className='text-2xl text-gray-800'>✅ Print at home</p>
+        <p className='text-2xl text-gray-800 dark:text-white'>✅ Print at home</p>
       </li>
     </ul>
     </div>
 
 <div className='w-1/2'>
-<h2 className="text-3xl text-right font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">
+<h2 className="text-3xl text-left font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">
   FAQs
 </h2>
 
@@ -514,18 +466,86 @@ export default function Home() {
     </div>
 </section>
 
+  {/* Specs End */}
+  <section className="dark:bg-gray-900 lg:py-10">
+  <div className="px-4 flex justify-between sm:px-6 lg:px-20 w-full">
+  {/* PLEASE NOTE:
+This is a digital product so no physical or printed products will be shipped.
+Colors may vary slightly depending on the computer monitor and printer you decide to use.
+TERMS OF USE
+This item is for personal use only. not to be resold, redistributed and not to use for any commercial purposes.
+REFUNDS
+Due to the nature of digital products, all sales are final. However, if you have any issues, please let us know within 7 days of purchase and we will try our best to resolve the issue. 
+Convert above to reat beautiful UI
+*/}
+<div className='flex w-full gap-x-6 items-start'>
+<div className='w-1/2'>
+<h2 className="text-xl font-bold text-gray-900 sm:text-3xl xl:text-3xl dark:text-white">PLEASE NOTE:
+</h2>
+<p className='text-lg leading-8 mt-2 text-gray-800 dark:text-white'>
+This is a digital product so no physical or printed products will be shipped.
+</p>
+<p className='text-lg leading-8 mt-2 text-gray-800 dark:text-white'>
+Colors may vary slightly depending on the computer monitor and printer you decide to use.
+</p>
+<p className='text-lg leading-8 mt-2 text-gray-800 dark:text-white'>
+I do not claim to be a professional lawyer, all consent forms are written and designed by my own research and experience. Please consult a professional lawyer if you have any concerns.
+ 
+</p>
+</div>
+<div className='w-1/2'>
+<h2 className="text-xl font-bold text-gray-900 sm:text-3xl xl:text-3xl dark:text-white">
+TERMS OF USE
+</h2>
 
-  <div className="flex flex-col space-y-0 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center my-10">
+<p className='text-lg leading-8 mt-2 text-gray-800 dark:text-white'>
+This item is for personal use only. not to be resold, redistributed and not to use for any commercial purposes.
+</p>
+<h2 className="text-xl font-bold text-gray-900 sm:text-3xl xl:text-3xl dark:text-white mt-4">
+REFUNDS
+</h2>
+<p className='text-lg leading-8 mt-2 text-gray-800 dark:text-white'>
+Due to the nature of digital products, all sales are final. However, if you have any issues, please let us know within 7 days of purchase and we will try our best to resolve the issue.
+</p>
+</div>
+
+
+
+</div>
+
+
+
+
+  </div>
+  </section>
+ <section className='dark:bg-gray-900'> <div className="flex flex-col space-y-0 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center my-10 ">
                 <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="inline-flex justify-center uppercase items-center py-3 px-20 text-xl font-black text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 animate-fade animate-once">
-                    Yes I Am Wise Enough To Grab This Deal
+                    Grab This Deal Now!
                     <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
                 </Link>
-             
             </div>
-            <div className='bg-gray-100 py-5'><p className='copyrights text-center'>All Rights Reserved &copy; CopyRights 2023 Brands Go Viral
-            </p></div>
+            </section>
+  <section className="dark:bg-gray-900 lg:py-10">
+  <div className="px-4 sm:px-6 lg:px-20 w-full flex flex-col items-center">
+  <h2 className="text-2xl text-center font-bold text-gray-900 sm:text-3xl xl:text-3xl dark:text-white">
+Still Need Help? 
+</h2>
+<p className='text-lg text-center leading-8 mt-2 text-gray-800 dark:text-white'>
+If you have any questions please send us a message or drop us an email at <Link href={'mailto:brandsgoviral@gmail.com'}><b className='text-bgv-skyblue'>brandsgoviral@gmail.com</b></Link>, we&apos;d be glad to help you.</p>
+<div className="flex w-full max-w-sm items-center space-x-2 mt-4">
+      <Input type="email" placeholder="Email" />
+      <Button type="submit">Subscribe</Button>
+    </div>
+    </div>
+  </section>
+
+
+                <div className='bg-gray-100 py-5 '><p className='copyrights text-center'>All Rights Reserved &copy; CopyRights 2023 Brands Go Viral
+            </p>
+            
+            </div>
     </main>
   )
 }

@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
 
     <html lang="en" className={`${inter.className} ${montserrat.className}`}>
-      <body >
+      <body>
 
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 {children} 
