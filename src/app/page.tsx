@@ -92,10 +92,10 @@ export default function Home() {
 
   return (
     
-    <main className=''>
+    <main className='dark:bg-gray-900'>
       <ModeToggle/>
       <Hero />
-      <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:to-gray-900 dark:from-gray-800 py-12">
+      <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:to-gray-900 dark:from-gray-900 py-12">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-4">
             Feeling Frustrated and Overwhelmed about the First Step in Launching Your Successful Beauty Business?
@@ -538,7 +538,7 @@ Still Need Help?
 If you have any questions please send us a message or drop us an email at <Link href={'mailto:brandsgoviral@gmail.com'}><b className='text-bgv-skyblue'>brandsgoviral@gmail.com</b></Link>, we&apos;d be glad to help you.</p>
     </div>
   </section>
-  <section className="dark:bg-gray-900 lg:py-10">
+  <section className="bg-bgv-pink dark:bg-gray-900 lg:py-10">
   <div className="px-4 sm:px-6 lg:px-20 w-full flex flex-col items-center">
   <NewsLetter />
 
@@ -546,7 +546,7 @@ If you have any questions please send us a message or drop us an email at <Link 
   </section>
   {/* <SubscribeForm/> */}
 
-                <div className='bg-gray-100 py-5 '><p className='copyrights text-center'>All Rights Reserved &copy; CopyRights 2023 Brands Go Viral
+                <div className='bg-gray-100 py-5 dark:bg-gray-800'><p className='copyrights text-center'>All Rights Reserved &copy; CopyRights 2023 Brands Go Viral
             </p>
             
             </div>

@@ -40,13 +40,13 @@ export default function NewsLetter({}: Props) {
           onConfettiComplete={() => setShowConfetti(false)}
         />
       )}
-      <div className="w-full p-5 md:p-6 space-y-5 bg-white max-w-4xl rounded-lg">
+      <div className="w-full p-5 md:p-6 space-y-5 bg-gray-100 dark:bg-gray-800 max-w-4xl rounded-lg">
         {/* Header and description */}
         <div className="pb-2 space-y-3">
           <h1 className="text-2xl font-black sm:text-2.5xl">
             Subscribe to Newsletter!
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-white">
           Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.
 
 </p>
@@ -71,11 +71,20 @@ export default function NewsLetter({}: Props) {
                 }),
               });
               const datas = await response.json();
-              if (datas.status >= 400) {
+              if (datas.status == 400) {
                 setStatus(datas.status);
-                setMessage(
-                  "Error joining the newsletter. You can directly contact me at github@ebraj."
-                );
+                setMessage("You are already subscribed");
+                
+                setTimeout(() => {
+                  setMessage("");
+                  setButtonDisabled(false);
+                }, 2000);
+                return;
+              }
+              else if(datas.status >400){
+                setStatus(datas.status);
+                setMessage("Something went wrong");
+                
                 setTimeout(() => {
                   setMessage("");
                   setButtonDisabled(false);
@@ -111,12 +120,13 @@ export default function NewsLetter({}: Props) {
               <Field
                 type="email"
                 name="email"
-                className="w-full px-5 py-3 bg-gray-100 rounded-md outline-none grow"
+                className="w-full px-5 py-3 bg-gray-100 rounded-md outline-none grow dark:text-black"
                 placeholder="Enter your email"
                 autoComplete="off"
+                
               />
               <button
-                className="px-5 py-3 font-bold text-gray-100 transition-all bg-gray-800 rounded-md hover:bg-gray-900 hover:scale-105 disabled:opacity-80"
+                className="px-5 py-4 font-bold text-gray-100 transition-all bg-gray-800 rounded-md hover:bg-gray-900 hover:scale-105 disabled:opacity-80 dark:bg-gray-900 "
                 type="submit"
                 disabled={buttonDisabled}
               >

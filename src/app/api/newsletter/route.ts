@@ -25,5 +25,6 @@ export async function POST(req: Request, res: NextApiResponse) {
     }),
   });
   const received = await response.json();
+  console.log(received)
   return NextResponse.json(received);
 }
