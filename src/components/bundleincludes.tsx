@@ -22,7 +22,7 @@ export const BundleIncludes = () => {
                 Engaging Instagram posts
               </h2>
             </div>
-            <p className="leading-relaxed text-lg mt-2 text-start font-light dark:text-white">
+            <p className="leading-relaxed text-gray-800 text-lg mt-2 text-start font-normal dark:text-white">
               These posts will help you promote your brand and products to your target audience.
             </p>
           </div>
@@ -35,7 +35,7 @@ export const BundleIncludes = () => {
                 Consent forms
               </h2>
             </div>
-            <p className="leading-relaxed text-lg mt-2 text-start font-light dark:text-white">
+            <p className="leading-relaxed text-gray-800 text-lg mt-2 text-start font-normal dark:text-white">
               These forms will help you comply with all applicable laws.
             </p>
           </div>
@@ -48,7 +48,7 @@ export const BundleIncludes = () => {
                 Packaging labels
               </h2>
             </div>
-            <p className="leading-relaxed text-lg mt-2 text-start font-light dark:text-white">
+            <p className="leading-relaxed text-gray-800 text-lg mt-2 text-start font-normal dark:text-white">
               These labels will help your products look professional, polished, and stand out on the shelf.
             </p>
           </div>
@@ -61,7 +61,7 @@ export const BundleIncludes = () => {
                 Business Branding Kit
               </h2>
             </div>
-            <p className="leading-relaxed text-lg mt-2 text-start font-light dark:text-white">
+            <p className="leading-relaxed text-gray-800 text-lg mt-2 text-start font-normal dark:text-white">
               This kit will help you create a cohesive and professional brand identity.
             </p>
           </div>
@@ -74,7 +74,7 @@ export const BundleIncludes = () => {
                 Business Planner
               </h2>
             </div>
-            <p className="leading-relaxed text-lg mt-2 text-start font-light dark:text-white">
+            <p className="leading-relaxed text-gray-800 text-lg mt-2 text-start font-normal dark:text-white">
               This will help you manage your business in the most efficient way.
             </p>
           </div>
@@ -87,7 +87,7 @@ export const BundleIncludes = () => {
                 Social Media Planner
               </h2>
             </div>
-            <p className="leading-relaxed text-lg mt-2 text-start font-light dark:text-white">
+            <p className="leading-relaxed text-gray-800 text-lg mt-2 text-start font-normal dark:text-white">
               This will help you grow your social presence to attract and engage your followers.
             </p>
           </div>

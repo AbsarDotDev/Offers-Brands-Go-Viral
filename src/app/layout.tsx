@@ -6,6 +6,9 @@ import { Analytics } from '@vercel/analytics/react';
 import localFont from 'next/font/local'
 import { Suspense } from 'react'
 import { FacebookPixelEvents } from '../components/pixel-events'
+
+
+
 const inter = Inter({ subsets: ['latin'] })
 const montserrat = localFont({
   src: '../../public/montvar.ttf',
@@ -27,8 +30,10 @@ export default function RootLayout({
 
     <html lang="en" className={`${inter.className} ${montserrat.className}`}>
       <body >
+
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-{children}   
+{children} 
+  
 <Suspense fallback={null}>
           <FacebookPixelEvents />
         </Suspense>

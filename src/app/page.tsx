@@ -4,11 +4,45 @@ import { Cta } from '@/components/cta'
 import { BundleIncludes } from '@/components/bundleincludes'
 import { ModeToggle } from '@/components/darkMode'
 import { Templates } from '@/components/templates'
-import { PiNumberCircleOneFill, PiNumberCircleTwoFill } from "react-icons/pi";
+import { PiNumberCircleFourFill, PiNumberCircleOneFill, PiNumberCircleThreeFill, PiNumberCircleTwoFill } from "react-icons/pi";
 import Testimonials from '@/components/testimonials'
 import Link from 'next/link'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
+export function AccordionDemo() {
+  return (
+    <Accordion type="single" collapsible className="w-full">
+      <AccordionItem value="item-1">
+        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It adheres to the WAI-ARIA design pattern.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger>Is it styled?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It comes with default styles that matches the other
+          components&apos; aesthetic.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger>Is it animated?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It&apos;s animated by default, but you can disable it if you
+          prefer.
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+  )
+}
 
 export default function Home() {
+  
   const cta = [
     {
       heading: "You are struggling to create captivating Instagram posts that will engage your followers.",
@@ -185,7 +219,7 @@ export default function Home() {
 
 
             </h6>
-            <p className="mb-4 font-light text-base text-gray-600 dark:text-white">Say goodbye to frustration and hello to success with our complete toolkit designed to transform beauty enthusiasts into thriving beautypreneurs!
+            <p className="mb-4 font-normal text-lg text-base text-gray-800 dark:text-white">Say goodbye to frustration and hello to success with our complete toolkit designed to transform beauty enthusiasts into thriving beautypreneurs!
             </p>
             <ul className="text-gray-600 list-none leading-[40px]">
               <li className="mb-2 text-gray-700 dark:text-gray-100">✅ <span className='font-bold'>Save time and money:</span> The Beauty Business Bundle includes everything you need to launch and grow your beauty brand, so you can save time and money by not having to purchase or create these resources separately.</li>
@@ -242,7 +276,7 @@ export default function Home() {
     
         <h3 className="mb-6 text-2xl md:text-3xl lg:text-3xl  tracking-tight font-black text-bgv-skyblue  dark:text-white">Value: $40
         </h3> 
-               <p className="mb-4 font-light text-base text-gray-600 dark:text-white">Get ready for extraordinary value with our digital products bundle! But wait, there&apos;s more. When you choose our bundle, you&apos;ll receive an exclusive bonus that you won&apos;t find anywhere else. Why settle for ordinary when you can have the extraordinary? This bonus will take your business to the next level, and it&apos;s included for free to provide unmatched value. It features a Blog Planner and an Essential Icons Pack, enabling you to create, plan, and present your digital content with ease. The Blog Planner is an essential tool that will help you outline your content, set goals, and ensure your blogging journey is both efficient and effective. Plus, the visual appeal of your digital projects is crucial, and our exclusive Essential Icons Pack allows you to enhance the beauty of all your projects. Every essential icon you can think of is included for free to help you stand out in the digital landscape.
+               <p className="mb-4 font-normal leading-7 text-base text-gray-800 dark:text-white">Get ready for extraordinary value with our digital products bundle! But wait, there&apos;s more. When you choose our bundle, you&apos;ll receive an exclusive bonus that you won&apos;t find anywhere else. Why settle for ordinary when you can have the extraordinary? This bonus will take your business to the next level, and it&apos;s included for free to provide unmatched value. It features a Blog Planner and an Essential Icons Pack, enabling you to create, plan, and present your digital content with ease. The Blog Planner is an essential tool that will help you outline your content, set goals, and ensure your blogging journey is both efficient and effective. Plus, the visual appeal of your digital projects is crucial, and our exclusive Essential Icons Pack allows you to enhance the beauty of all your projects. Every essential icon you can think of is included for free to help you stand out in the digital landscape.
         </p>
 
 
@@ -319,6 +353,168 @@ export default function Home() {
         </div>
       </section>
   <Testimonials/>
+
+  {/*Roadmap  Start*/}
+  <section className=" dark:bg-gray-900 py-20 lg:py-0">
+  <div className="px-4 bloc mx-auto max-w-7xl sm:px-6 lg:px-8">
+  <div className="text-center my-10">
+ <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">Here&apos;s how it works:
+</h2>
+            </div>
+<ol className="items-start sm:flex">
+    <li className="relative mb-6 sm:mb-0 w-1/4">
+        <div className="flex items-center">
+            <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <PiNumberCircleOneFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
+            </div>
+            <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        </div>
+        <div className="mt-3 sm:pr-8">
+            {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
+            <p className="text-base font-medium text-gray-800 dark:text-gray-400">Minutes after you place your order, you&apos;ll receive a pdf file containing a link.</p>
+        </div>
+    </li>
+    <li className="relative mb-6 sm:mb-0 w-1/4">
+        <div className="flex items-center">
+            <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <PiNumberCircleTwoFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
+            </div>
+            <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        </div>
+        <div className="mt-3 sm:pr-8">
+            {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
+            <p className="text-base font-medium text-gray-800 dark:text-gray-400">Click on the link(s) given in the PDF file and It will take you to a landing page for the design on Canva.com. Once there, click Use Template. If you don&apos;t have a Canva account, it will prompt you to create an account first.</p>
+        </div>
+    </li>
+    <li className="relative mb-6 sm:mb-0 w-1/4">
+        <div className="flex items-center">
+            <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <PiNumberCircleThreeFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
+            </div>
+            <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        </div>
+        <div className="mt-3 sm:pr-8">
+            {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
+            <p className="text-base font-medium text-gray-800 dark:text-gray-400">Customize your details in Canva, save and download</p>
+        </div>
+    </li>
+    <li className="relative mb-6 sm:mb-0 w-1/4">
+        <div className="flex items-center">
+            <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <PiNumberCircleFourFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
+            </div>
+            <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        </div>
+        <div className="mt-3 sm:pr-8">
+            {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
+            <p className="text-base font-medium text-gray-800 dark:text-gray-400">Print at home, go to local print shop or online print company</p>
+        </div>
+    </li>
+
+</ol>
+</div>
+</section>
+  {/* Roadmap End */}
+
+  {/* Specs Start */}
+  {/* <section className="dark:bg-gray-900 py-20 lg:py-10 mx-auto">
+  <div className="flex justify-center">
+    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 text-center">
+      <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">SPECIFICATIONS</h2>
+    </div>
+  </div>
+  <div className="flex justify-center py-14">
+    <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Instant download</p>
+      </li>
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Customizable in Canva</p>
+      </li>
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Easy to edit</p>
+      </li>
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Download and use multiple times</p>
+      </li>
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Lifetime access to your template</p>
+      </li>
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Print at home</p>
+      </li>
+    </ul>
+  </div>
+</section> */}
+
+
+  {/* Specs End */}
+  <section className="dark:bg-gray-900 my-20 lg:py-10">
+  <div className="px-4 flex justify-between sm:px-6 lg:px-20 w-full">
+  <div className='w-1/2'>
+      <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">SPECIFICATIONS</h2>
+  <ul className="space-y-6 text-left text-gray-500 dark:text-gray-400 mt-6">
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Instant download</p>
+      </li>
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Customizable in Canva</p>
+      </li>
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Easy to edit</p>
+      </li>
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Download and use multiple times</p>
+      </li>
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Lifetime access to your template</p>
+      </li>
+      <li className="">
+        <p className='text-2xl text-gray-800'>✅ Print at home</p>
+      </li>
+    </ul>
+    </div>
+
+<div className='w-1/2'>
+<h2 className="text-3xl text-right font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">
+  FAQs
+</h2>
+
+  <Accordion type="single" collapsible className="w-full mt-4">
+      <AccordionItem value="item-1">
+        <AccordionTrigger className='font-medium text-lg font-mont'>IS THERE ANY TIME LIMIT TO ACCESS THE LINK?
+</AccordionTrigger>
+        <AccordionContent className='text-md'>
+        There is no time limit, you can access the link for your lifetime.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger className='font-medium text-lg font-mont'>IS THERE ANY DOWNLOAD LIMIT?
+</AccordionTrigger>
+        <AccordionContent className='text-md'>
+        There is no download limit, download as many times as you need it.
+
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger className='font-medium text-lg font-mont'> WHERE DO I PRINT?
+</AccordionTrigger>
+        <AccordionContent className='text-md'>
+        In some of our listings, there is a Print Template included, this allows you to print at home or you use any online printing service like Avery, PrintsofLove, OnlineLabels, UPrinting etc
+
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+
+  </div>
+    </div>
+</section>
+
+
   <div className="flex flex-col space-y-0 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center my-10">
                 <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="inline-flex justify-center uppercase items-center py-3 px-20 text-xl font-black text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 animate-fade animate-once">
                     Yes I Am Wise Enough To Grab This Deal

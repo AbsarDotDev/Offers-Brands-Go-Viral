@@ -18,7 +18,7 @@ export const Templates = ({bundlename, template, value,content, image}:Templates
     
         <h3 className="mb-6 text-2xl md:text-3xl lg:text-3xl  tracking-tight font-black text-bgv-skyblue  dark:text-white">Value: {value}
         </h3> 
-               <p className="mb-4 font-light text-base text-gray-600 dark:text-white">{content}
+               <p className="mb-4 font-normal leading-7 text-base text-gray-800 dark:text-white">{content}
         </p>
 
 
