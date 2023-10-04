@@ -196,7 +196,7 @@ export default function Home() {
 
 
             </h6>
-            <p className="mb-4 font-normal text-lg text-base text-gray-800 dark:text-white">Say goodbye to frustration and hello to success with our complete toolkit designed to transform beauty enthusiasts into thriving beautypreneurs!
+            <p className="mb-4 font-normal text-lg  text-gray-800 dark:text-white">Say goodbye to frustration and hello to success with our complete toolkit designed to transform beauty enthusiasts into thriving beautypreneurs!
             </p>
             <ul className="text-gray-600 list-none leading-[40px]">
               <li className="mb-2 text-gray-700 dark:text-gray-100">✅ <span className='font-bold'>Save time and money:</span> The Beauty Business Bundle includes everything you need to launch and grow your beauty brand, so you can save time and money by not having to purchase or create these resources separately.</li>
