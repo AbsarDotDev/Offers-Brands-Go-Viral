@@ -28,8 +28,11 @@ a must-have for all cosmetics brands and estheticians.
       .then((x) => x.default)
       .then((ReactPixel) => {
         ReactPixel.init("1311143526433733"); //don't forget to change this
-        ReactPixel.track('InitiateCheckout');
-      });
+        ReactPixel.track(
+            "AddToCart",
+            { value: 99.00, currency: "USD" }
+            );
+            });
       window.location.href ='https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button'
                 }}
             className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 animate-fade animate-once">
