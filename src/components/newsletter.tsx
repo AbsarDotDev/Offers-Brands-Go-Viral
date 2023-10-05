@@ -3,6 +3,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Confetti from "react-confetti";
+import { Button } from "./ui/button";
+import { Loader2 } from "lucide-react";
 
 type Props = {};
 const requiredSchema = Yup.object({
@@ -106,7 +108,7 @@ export default function NewsLetter({}: Props) {
             } catch (error) {
               setStatus(500);
               setMessage(
-                "Error joining the newsletter. You can directly contact me at github@ebraj."
+                "You are alredy subscribed, you can also email me at brandsgoviral@gmail.com"
               );
               setTimeout(() => {
                 setMessage("");
@@ -125,13 +127,16 @@ export default function NewsLetter({}: Props) {
                 autoComplete="off"
                 
               />
-              <button
+           {buttonDisabled?    <Button disabled>
+      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+      Please wait
+    </Button>: <button
                 className="px-5 py-4 font-bold text-gray-100 transition-all bg-gray-800 rounded-md hover:bg-gray-900 hover:scale-105 disabled:opacity-80 dark:bg-gray-900 "
                 type="submit"
                 disabled={buttonDisabled}
               >
-                {submitting ? "Submitting" : "Submit"}
-              </button>
+Submit              </button>}  
+          
             </div>
             {message && (
               <p
