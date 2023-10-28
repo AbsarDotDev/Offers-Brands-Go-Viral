@@ -5,6 +5,7 @@ export const content = [
   "./src/app/**/*.{ts,tsx}",
   "./src/components/**/*.{ts,tsx}",
   "./node_modules/flowbite-react/**/*.js",
+  "./node_modules/flowbite/**/*.js"
 
 ];
 export const theme = {

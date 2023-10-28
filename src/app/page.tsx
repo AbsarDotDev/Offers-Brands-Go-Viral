@@ -17,6 +17,8 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import SubscribeForm from '@/components/subscribe-form'
 import NewsLetter from '@/components/newsletter'
+import Header from '@/components/header'
+import MobileDrawer from '@/components/mobile-nav'
 
 export default function Home() {
   
@@ -93,7 +95,8 @@ export default function Home() {
   return (
     
     <main className='dark:bg-gray-900'>
-      <ModeToggle/>
+      <div className='hidden lg:block md:block'><Header/></div><div className='block md:hidden'><MobileDrawer/></div>
+      {/* <ModeToggle/> */}
       <Hero />
       <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:to-gray-900 dark:from-gray-900 py-12">
         <div className="max-w-4xl mx-auto px-4">
