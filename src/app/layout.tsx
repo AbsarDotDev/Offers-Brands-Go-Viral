@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/react';
 import localFont from 'next/font/local'
 import { Suspense } from 'react'
 import { FacebookPixelEvents } from '../components/pixel-events'
+import StoreInitializer from './store-initializer';
 
 
 
@@ -30,6 +31,7 @@ export default function RootLayout({
 
     <html lang="en" className={`${inter.className} ${montserrat.className}`}>
       <body>
+      <StoreInitializer isVisible={false}/>
 
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 {children} 
@@ -41,6 +43,7 @@ export default function RootLayout({
 
  </ThemeProvider>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js" async></script>
+ 
 
 
 

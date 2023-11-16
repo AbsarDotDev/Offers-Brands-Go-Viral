@@ -5,6 +5,8 @@ import * as Yup from "yup";
 import Confetti from "react-confetti";
 import { Button } from "./ui/button";
 import { Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useStore } from "@/app/store";
 
 type Props = {};
 const requiredSchema = Yup.object({
@@ -20,15 +22,21 @@ export default function NewsLetter({}: Props) {
   const [totalCounts, setTotalCounts] = useState<number>(400);
   const [showConfetti, setShowConfetti] = useState<boolean>(false);
   const [dimensions, setDimensions] = useState({
-    width: 0,
-    height: 0,
+    width:0,
+    height:0,
   });
+  const { isVisible , updateIsVisible} = useStore()
+  const localStorageKey = 'newsletterPopupShown';
+
   useEffect(() => {
-    const { innerWidth: width, innerHeight: height } = window;
-    setDimensions({
-      width,
-      height,
-    });
+    function handleResize() {
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+
+  handleResize();
   }, []);
 
   return (
@@ -39,18 +47,20 @@ export default function NewsLetter({}: Props) {
           height={dimensions.height}
           numberOfPieces={totalCounts}
           run={run}
-          onConfettiComplete={() => setShowConfetti(false)}
+          onConfettiComplete={()=> {setShowConfetti(false);
+            updateIsVisible(false);
+          }}
+          style={{ position: "fixed" }} 
         />
       )}
       <div className="w-full p-5 md:p-6 space-y-5 bg-gray-100 dark:bg-gray-800 max-w-4xl rounded-lg">
         {/* Header and description */}
         <div className="pb-2 space-y-3">
           <h1 className="text-2xl font-black sm:text-2.5xl">
-            Subscribe to Newsletter!
+            Claim Your Gift! 🎁
           </h1>
-          <p className="text-gray-600 dark:text-white">
-          Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.
-
+          <p className="text-gray-600 dark:text-white leading-6">
+          Grab your product sneak peak & get additional 10% Off coupon directly sent to your email. Stay to date with announcements, giveaways and exclusive discounts
 </p>
         </div>
 
@@ -75,7 +85,7 @@ export default function NewsLetter({}: Props) {
               const datas = await response.json();
               if (datas.status == 400) {
                 setStatus(datas.status);
-                setMessage("You are already subscribed");
+                setMessage("You are alredy subscribed, you can also email me at brandsgoviral@gmail.com");
                 
                 setTimeout(() => {
                   setMessage("");
@@ -93,9 +103,10 @@ export default function NewsLetter({}: Props) {
                 }, 2000);
                 return;
               }
+              localStorage.setItem(localStorageKey, 'true');
 
               setStatus(201);
-              setMessage("Thank you for subscribing my newsletter 👻.");
+              setMessage("Congratulations! Please see your inbox for the gift!");
               setShowConfetti(true);
               setRun(true);
               setTimeout(() => {
@@ -105,6 +116,7 @@ export default function NewsLetter({}: Props) {
                 setButtonDisabled(false);
               }, 4000);
               setTotalCounts(400);
+
             } catch (error) {
               setStatus(500);
               setMessage(

@@ -1,16 +1,16 @@
 import Image from 'next/image';
 import React from 'react';
 import { FaGem, FaFileSignature, FaTags, FaBriefcase, FaClipboardList, FaShareAlt } from 'react-icons/fa';
-
+import launchandgrow from '../../public/LAUNCH and GROW.png';
 export const BundleIncludes = () => {
   return (
     <section className="text-gray-600 body-font dark:bg-gray-900">
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
         <div className="lg:w-1/2 w-full mb-8 lg:mb-0 rounded-lg overflow-hidden">
-          <Image alt="feature" className="object-cover object-center h-full w-full" src="/LAUNCH and GROW (1).png" width={680} height={870} />
+          <Image alt="feature" className="object-cover object-center h-full w-full" src={launchandgrow}/>
         </div>
         <div className="flex flex-col flex-wrap lg:py-6 -mb-8 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-          <p className="mb-8 text-lg font-normal lg:text-lg dark:text-white font-semibold">
+          <p className="mb-8 text-lg lg:text-lg dark:text-white font-semibold">
             This bundle includes everything you need to LAUNCH and GROW a successful beauty brand, including:
           </p>
 

@@ -33,32 +33,36 @@ return (
           <div>
               <ul className="px-4 font-head text-lg uppercase text-gray-800  animate-in slide-in-from-right">
                 <li className="py-4">
-                  <Link href={'/collection/shoes'}> Who Am I?
+                  <Link href={'#who-am-i'}> Who Am I?
 
 </Link>
                 </li>
          
                 <li className="py-4">
-                  <Link href={'/collection/shirt'}> What&apos;s Included?
-
-</Link>
-                </li>
-               
-                <li className="py-4">
-                  <Link href={'#'}>How Does It Works?
+                  <Link href={'#whats-included'}> What&apos;s Included?
 
 </Link>
                 </li>
                 <li className="py-4">
-                  <Link href={'#'}>FAQs</Link>
-                </li>
-                <li className="py-4">
-                  <Link href={'#'}>Refund Policy
+                  <Link href={'#testimonial'}> Testimonial
 
 </Link>
                 </li>
                 <li className="py-4">
-                  <Link href={'#'}>Freebie
+                  <Link href={'#how-does-it-work'}>How Does It Works?
+
+</Link>
+                </li>
+                <li className="py-4">
+                  <Link href={'#faqs'}>FAQs</Link>
+                </li>
+                <li className="py-4">
+                  <Link href={'#refund-policy'}>Refund Policy
+
+</Link>
+                </li>
+                <li className="py-4">
+                  <Link href={'#freebie'}>Freebie
 
 </Link>
                 </li>

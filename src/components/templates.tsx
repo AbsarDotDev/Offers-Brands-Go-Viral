@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
+import { Button } from './ui/button'
 interface TemplatesProps{
     bundlename:string,
     template:string,
     value:string,
     content:string,
-    image:string
+    image:string,
+    prd:string
 }
-export const Templates = ({bundlename, template, value,content, image}:TemplatesProps) => {
+export const Templates = ({bundlename, template, value,content, image,prd}:TemplatesProps) => {
   return (
 
     <section className=" bg-gradient-to-r  from-bgv-pink to-bgv-pink dark:to-transparent dark:from-transparent dark:bg-gray-900 p-5 ">
@@ -20,7 +22,7 @@ export const Templates = ({bundlename, template, value,content, image}:Templates
         </h3> 
                <p className="mb-4 font-normal leading-7 text-base text-gray-800 dark:text-white">{content}
         </p>
-
+<Button variant={'destructive'} className='py-6 text-lg font-extrabold'>Get This Bundle Separately For {value}</Button>
 
       </div>
       <div className="lg:w-1/2 justify-self-end w-full mb-8 lg:mb-0 rounded-lg overflow-hidden">
