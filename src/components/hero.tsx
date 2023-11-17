@@ -48,7 +48,7 @@ a must-have for all cosmetics brands and estheticians.
         <div className="lg:py-6 flex flex-col md:flex-row gap-x-12 items-center justify-start" id='who-am-i'>
 <div className='w-full md:w-2/3'>
         <h1 className="mb-4  text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white animate-fade-right animate-once">Who Am I?</h1>
-        <p className="mb-8 text-lg font-normal text-gray-700 lg:text-xl leading-10 dark:text-gray-400 animate-fade-right animate-once">Hello! I&apos;m Tiana Davis. I&apos;m <b>Top 1% Seller on Etsy</b> with an exceptional <b>positive rating.</b> I&apos;m a <b>Full-time Etsy seller</b> and have been serving <b>over 5000 satisfied customers,</b> especially <b>estheticians and beauticians,</b> for more than <b>a year.</b> After serving 5000+ Estheticians & Beauticians, I&apos;ve curated the most useful templates into a bundle, offering them in a valuable format. I&apos;m currently offering my best-selling items at discounted prices on my website.
+        <p className="mb-8 text-lg font-normal text-gray-700 lg:text-xl leading-[30px] md:leading-10 lg:leading-10 dark:text-gray-400 animate-fade-right animate-once">Hello! I&apos;m Tiana Davis. I&apos;m <b>Top 1% Seller on Etsy</b> with an exceptional <b>positive rating.</b> I&apos;m a <b>Full-time Etsy seller</b> and have been serving <b>over 5000 satisfied customers,</b> especially <b>estheticians and beauticians,</b> for more than <b>a year.</b> After serving 5000+ Estheticians & Beauticians, I&apos;ve curated the most useful templates into a bundle, offering them in a valuable format. I&apos;m currently offering my best-selling items at discounted prices on my website.
 
 </p>
 
