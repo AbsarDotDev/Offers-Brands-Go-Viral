@@ -25,7 +25,7 @@ import Marquee from 'react-fast-marquee'
 import NewsletterModal from '@/components/newsletter-popup'
 
 export default function Home() {
-  
+
   const cta = [
     {
       heading: "You are struggling to create captivating Instagram posts that will engage your followers.",
@@ -108,7 +108,7 @@ export default function Home() {
   return (
     <><NewsletterModal /><main className='dark:bg-gray-900'>
 
-      <div className='hidden lg:block md:block sticky top-0 z-[99]'><Header /></div><div className='block md:hidden'><MobileDrawer /></div>
+      <div className='sticky top-0 z-[99]'><Header /></div><div className='block md:hidden'><MobileDrawer /></div>
       <Hero />
       <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:to-gray-900 dark:from-gray-900 py-12">
         <div className="max-w-4xl mx-auto px-4">
@@ -137,7 +137,7 @@ export default function Home() {
             index={index} />
         )
       })}
-      <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:to-gray-900 dark:from-gray-800 py-12">
+      <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:to-gray-900 dark:from-gray-800 py-5 md:py-12 lg:py-12">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="max-w-screen text-sm text-white sm:text-lg md:text-1xl dark:text-gray-400">
             <h2 className="mb-6  text-2xl md:text-5xl lg:text-5xl tracking-tight font-extrabold text-white drop-shadow-xl text-center dark:text-white">IF You&apos;re FEELING THIS WAY, You&apos;re NOT ALONE.
@@ -150,21 +150,21 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='px-10 dark:bg-gray-900 py-12' id='whats-included'>
+      <section className='px-10 dark:bg-gray-900 pb-8 pt-12 md:pb-12 lg:pb-12' id='whats-included'>
         <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-center text-gray-900 md:text-5xl lg:text-6xl dark:text-white">What you&apos;ll get in the  Beautypreneur Mega Bundle
         </h1>
-        <Image src={'/MEGA BUNDLE THUMBNAIL.png'} alt='bradnsgoviral 10x productivity' width={1920} height={1080} className='m-auto py-10' />
+        <Image src={'/MEGA BUNDLE THUMBNAIL.png'} alt='bradnsgoviral 10x productivity' width={1920} height={1080} className='m-auto py-6 md:py-10 lg:py-10' />
         <h1 className="my-4 text-3xl text-center font-extrabold tracking-tight leading-none text-gray-900 md:text-6xl lg:text-[64px] dark:text-white"><span className="text-transparent bg-clip-text bg-gradient-to-r from-bgv-pink to-bgv-skyblue">The Only Mega Bundle You&apos;ll Ever Need!</span>
         </h1>    </section>
       {/* <BundleIncludes /> */}
-      <section className='afterBundle px-20 py-12 dark:bg-gray-900'>
-        <div className='text-center py-10'>
+      <section className='afterBundle px-10 md:px-20 lg:px-20 pt-0 md:pt-12 lg:pt-12 pb-12 dark:bg-gray-900'>
+        <div className='text-center py-0 md:py-10 lg:py-10'>
           <h1 className="mb-4 text-lg font-extrabold tracking-tight leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-white">With my mega bundle, you&apos;ll have everything you need to turn your passion for beauty into a successful business.
           </h1>
           <p className="mb-8 text-lg font-extrabold lg:text-xl dark:text-gray-400"><mark className=' text-gray-700 dark:text-red-700'>don&apos;t miss out on this opportunity to take your beauty business to the next level.
           </mark>
           </p>
-          <WebButton text='Avail this product in discounted price!' />
+          <WebButton text='Avail this product in discounted price!' style='text-lg md:text-2xl lg:text-2xl' />
           {/* <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="relative inline-flex justify-center items-center py-3 px-5 text-base md:text-2xl lg:text-2xl font-medium text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow-md">
       <span className="relative z-10">
         Avail this product in discounted price!
@@ -198,8 +198,8 @@ export default function Home() {
 
 
           </div>
-          <div className="lg:w-1/2 w-full mb-8 lg:mb-0 rounded-lg overflow-hidden">
-            <Image alt="feature" className="object-cover object-center h-full w-full" src="/family.jpg" width={460} height={500} />
+          <div className="lg:w-1/2 w-full mb-2 lg:mb-0 rounded-lg overflow-hidden">
+            <Image alt="feature" className="object-cover object-center h-full w-full" src="/imagine possiblity.jpeg" width={460} height={500} />
           </div>
         </div>
       </section>
@@ -240,13 +240,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="dark:to-transparent dark:from-transparent dark:bg-gray-900 p-5 text-center px-20 py-20">
-      <h1 className="mb-4 text-center text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white animate-fade-right animate-once">Here&apos;s An <span className="text-transparent bg-clip-text bg-gradient-to-r to-bgv-pink from-bgv-skyblue">Exciting </span>News
-</h1>
-<p className="text-2xl leading-10 font-medium">Even this Mega Bundle contains a massive value inside in discounted price but, we understand that every customer is unique, with distinct preferences and needs.
+      <section className="dark:to-transparent dark:from-transparent dark:bg-gray-900 p-5 text-center px-10 md:px-20 lg:px-20 py-10 md:py-20 lg:py-20">
+        <h1 className="mb-4 text-center text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white animate-fade-right animate-once">Here&apos;s An <span className="text-transparent bg-clip-text bg-gradient-to-r to-bgv-pink from-bgv-skyblue">Exciting </span>News
+        </h1>
+        <p className="text-lg md:text-2xl lg:text-2xl leading-[30px] md:leading-10 lg:leading-10 font-medium">Even this Mega Bundle contains a massive value inside in discounted price but, we understand that every customer is unique, with distinct preferences and needs.
 
-That&apos;s why we are introducing a remarkable opportunity for you to seize individual product bundle separately, providing the ultimate freedom of choice.</p>
-</section>
+          That&apos;s why we are introducing a remarkable opportunity for you to seize individual product bundle separately, providing the ultimate freedom of choice.</p>
+      </section>
 
 
 
@@ -263,10 +263,10 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
         )
       })}
 
-      <section className=' bg-gradient-to-r  from-bgv-pink to-bgv-pink dark:to-transparent dark:from-transparent dark:bg-gray-900 p-5 '>
+      <section className='bg-gradient-to-r  from-bgv-pink to-bgv-pink dark:to-transparent dark:from-transparent dark:bg-gray-900 p-5 '>
         <h1 className='text-black text-5xl md:text-5xl lg:text-7xl py-4  text-center font-black dark:text-white'> BONUSES</h1>
         <div className="py-2 px-4 mx-auto max-w-screen-xl lg:px-6 flex flex-col items-center md:flex-row lg:flex-row-reverse gap-10">
-          <div className="lg:w-1/2 w-full text-white sm:text-lg md:text-1xl dark:text-gray-400 bg-white dark:bg-gray-800 p-10 rounded-xl">
+          <div className="lg:w-1/2 w-full text-white sm:text-lg md:text-1xl dark:text-gray-400 bg-white dark:bg-gray-800 p-8 md:p-10 lg:p-10 rounded-xl">
             <h1 className="mb-6 text-2xl  tracking-tight font-extrabold text-black drop-shadow-xl dark:text-white">20 Pages Blog Planner & 150+ Icons Pack</h1>
 
             <h3 className="mb-6 text-2xl md:text-3xl lg:text-3xl  tracking-tight font-black text-bgv-skyblue  dark:text-white">Value: $40
@@ -283,7 +283,7 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
 
       </section>
       <section className='p-5 py-12 px-4 w-full lg:px-6 dark:bg-gray-900'>
-        <div className=" flex flex-col md:flex-row lg:flex-row gap-10 justify-center items-center">
+        <div className=" flex flex-col md:flex-row lg:flex-row gap-10 justify-center items-center md:items-start">
           <h1 className=" mb-2 text-gray-900 font-black  dark:text-white text-3xl">✅  Lifetime Access </h1>
           <h1 className=" mb-2 text-gray-900 font-black dark:text-white text-3xl">✅  Assistance in Editing</h1>
           <h1 className=" mb-2 text-gray-900 font-black dark:text-white text-3xl">✅  Canva Editability</h1>
@@ -304,7 +304,7 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
 
       </section>
 
-      <section className="bg-gradient-to-r  from-bgv-pink to-bgv-skyblue dark:to-transparent dark:from-transparent dark:bg-gray-900 py-20 lg:py-0">
+      <section className="bg-gradient-to-r  from-bgv-pink to-bgv-skyblue dark:to-transparent dark:from-transparent dark:bg-gray-900 py-16 md:py-20 lg:py-20">
         <div className="px-4 mx-auto max-w-screen-xl lg:py-20 lg:px-6 flex flex-col md:flex-row lg:flex-row gap-y-10">
           <div className="lg:w-1/2 w-full text-white sm:text-lg md:text-1xl dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-8 py-10 rounded-xl lg:rounded-tr-none lg:rounded-br-none ">
             <h1 className="mb-6 capitalize text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-4xl dark:text-white">You&apos;re Ready for this if...</h1>
@@ -332,13 +332,13 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
           </div>
         </div>
       </section>
-      <section className=" dark:bg-gray-900 py-20 lg:py-10">
+      <section className=" dark:bg-gray-900 pt-[74px] pb-4 md:pt-10 lg:pt-10 md:pb-10 lg:pb-10">
         <div className="px-4 bloc mx-auto max-w-7xl sm:px-6 lg:px-8"> <Features />
         </div>
       </section>
       <Testimonials />
-      <div className="flex flex-col space-y-0 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center my-10">
-        <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="inline-flex justify-center uppercase items-center py-3 px-20 text-xl font-black text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 animate-fade animate-once">
+      <div className="flex flex-col space-y-0 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center my-10 mx-4 md:mx-0">
+        <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="inline-flex justify-center uppercase items-center py-3 px-10 md:px-20 lg:px-20 text-xl font-black text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 animate-fade animate-once">
           Yes I Am Wise Enough To Grab This Deal
           <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -347,66 +347,70 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
 
       </div>
       {/*Roadmap  Start*/}
-      <section className=" dark:bg-gray-900 py-20 lg:py-10" id='how-does-it-work'>
-        <div className="px-4 bloc mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <section className=" dark:bg-gray-900 md:pt-10 lg:pt-10 pb-12 md:pb-10 lg:pb-10" id='how-does-it-work'>
+        <div className="px-4 mt-6 md:mt-0 bloc mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="text-center my-10">
             <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">Here&apos;s how it works:
             </h2>
           </div>
-          <ol className="items-start sm:flex">
-            <li className="relative mb-6 sm:mb-0 w-1/4">
-              <div className="flex items-center">
-                <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                  <PiNumberCircleOneFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
+          <ol className="items-start block lg:flex">
+            <div className='flex w-full lg:w-1/2'>
+              <li className="relative mb-6 sm:mb-0 w-1/2 ">
+                <div className="flex items-center">
+                  <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                    <PiNumberCircleOneFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
+                  </div>
+                  <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                 </div>
-                <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-              </div>
-              <div className="mt-3 sm:pr-8">
-                {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+                <div className="mt-3 sm:pr-8">
+                  {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
     <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
-                <p className="text-base font-medium text-gray-800 dark:text-gray-400">Minutes after you place your order, you&apos;ll receive a pdf file containing a link.</p>
-              </div>
-            </li>
-            <li className="relative mb-6 sm:mb-0 w-1/4">
-              <div className="flex items-center">
-                <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                  <PiNumberCircleTwoFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
+                  <p className="text-base font-medium text-gray-800 dark:text-gray-400">Minutes after you place your order, you&apos;ll receive a pdf file containing a link.</p>
                 </div>
-                <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-              </div>
-              <div className="mt-3 sm:pr-8">
-                {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
-    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
-                <p className="text-base font-medium text-gray-800 dark:text-gray-400">Click on the link(s) given in the PDF file and It will take you to a landing page for the design on Canva.com. Once there, click Use Template. If you don&apos;t have a Canva account, it will prompt you to create an account first.</p>
-              </div>
-            </li>
-            <li className="relative mb-6 sm:mb-0 w-1/4">
-              <div className="flex items-center">
-                <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                  <PiNumberCircleThreeFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
-                </div>
-                <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-              </div>
-              <div className="mt-3 sm:pr-8">
-                {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
-    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
-                <p className="text-base font-medium text-gray-800 dark:text-gray-400">Customize your details in Canva, save and download</p>
-              </div>
-            </li>
-            <li className="relative mb-6 sm:mb-0 w-1/4">
-              <div className="flex items-center">
-                <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                  <PiNumberCircleFourFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
-                </div>
-                <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-              </div>
-              <div className="mt-3 sm:pr-8">
-                {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
-    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
-                <p className="text-base font-medium text-gray-800 dark:text-gray-400">Print at home, go to local print shop or online print company</p>
-              </div>
-            </li>
+              </li>
 
+              <li className="relative mb-6 sm:mb-0 w-1/2 ">
+                <div className="flex items-center">
+                  <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                    <PiNumberCircleTwoFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
+                  </div>
+                  <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                </div>
+                <div className="mt-3 sm:pr-8">
+                  {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
+                  <p className="text-base font-medium text-gray-800 dark:text-gray-400">Click on the link(s) given in the PDF file and It will take you to a landing page for the design on Canva.com. Once there, click Use Template. If you don&apos;t have a Canva account, it will prompt you to create an account first.</p>
+                </div>
+              </li>
+            </div>
+            <div className='flex w-full lg:w-1/2'>
+              <li className="relative mb-6 sm:mb-0 w-1/2 ">
+                <div className="flex items-center">
+                  <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                    <PiNumberCircleThreeFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
+                  </div>
+                  <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                </div>
+                <div className="mt-3 sm:pr-8">
+                  {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
+                  <p className="text-base font-medium text-gray-800 dark:text-gray-400">Customize your details in Canva, save and download</p>
+                </div>
+              </li>
+              <li className="relative mb-6 sm:mb-0 w-1/2">
+                <div className="flex items-center">
+                  <div className="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                    <PiNumberCircleFourFill size="1.5em" style={{ 'background-image': 'linear-gradient(to right, #f7c6e7 , #b5a2f9);', 'border-radius': '50%' }} />
+                  </div>
+                  <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                </div>
+                <div className="mt-3 sm:pr-8">
+                  {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
+                  <p className="text-base font-medium text-gray-800 dark:text-gray-400">Print at home, go to local print shop or online print company</p>
+                </div>
+              </li>
+            </div>
           </ol>
         </div>
       </section>
@@ -415,46 +419,46 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
       {/* Specs Start */}
 
       <section className="dark:bg-gray-900 lg:py-10">
-        <div className="px-4 flex justify-between sm:px-6 lg:px-20 w-full">
-          <div className='w-1/2'>
+        <div className="px-4 flex flex-col lg:flex-row justify-between sm:px-6 lg:px-20 w-full">
+          <div className='w-full lg:w-1/2'>
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">SPECIFICATIONS</h2>
             <ul className="space-y-6 text-left text-gray-500 dark:text-gray-400 mt-6">
               <li className="">
-                <p className='text-2xl text-gray-800 dark:text-white'>✅ Instant download</p>
+                <p className='text-xl md:text-2xl text-gray-800 dark:text-white'>✅ Instant download</p>
               </li>
               <li className="">
-                <p className='text-2xl text-gray-800 dark:text-white'>✅ Customizable in Canva</p>
+                <p className='text-xl md:text-2xl text-gray-800 dark:text-white'>✅ Customizable in Canva</p>
               </li>
               <li className="">
-                <p className='text-2xl text-gray-800 dark:text-white'>✅ Easy to edit</p>
+                <p className='text-xl md:text-2xl text-gray-800 dark:text-white'>✅ Easy to edit</p>
               </li>
               <li className="">
-                <p className='text-2xl text-gray-800 dark:text-white'>✅ Download and use multiple times</p>
+                <p className='text-xl md:text-2xl text-gray-800 dark:text-white'>✅ Download and use multiple times</p>
               </li>
               <li className="">
-                <p className='text-2xl text-gray-800 dark:text-white'>✅ Lifetime access to your template</p>
+                <p className='text-xl md:text-2xl text-gray-800 dark:text-white'>✅ Lifetime access to your template</p>
               </li>
               <li className="">
-                <p className='text-2xl text-gray-800 dark:text-white'>✅ Print at home</p>
+                <p className='text-xl md:text-2xl text-gray-800 dark:text-white'>✅ Print at home</p>
               </li>
             </ul>
           </div>
 
-          <div className='w-1/2' id='faqs'>
+          <div className='w-full lg:w-1/2 py-16 lg:py-0' id='faqs'>
             <h2 className="text-3xl text-left font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white">
               FAQs
             </h2>
 
             <Accordion type="single" collapsible className="w-full mt-4">
               <AccordionItem value="item-1">
-                <AccordionTrigger className='font-medium text-lg font-mont'>IS THERE ANY TIME LIMIT TO ACCESS THE LINK?
+                <AccordionTrigger className='font-medium text-base md:text-lg font-mont text-left'>IS THERE ANY TIME LIMIT TO ACCESS THE LINK?
                 </AccordionTrigger>
                 <AccordionContent className='text-md'>
                   There is no time limit, you can access the link for your lifetime.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger className='font-medium text-lg font-mont'>IS THERE ANY DOWNLOAD LIMIT?
+                <AccordionTrigger className='font-medium text-base md:text-lg font-mont'>IS THERE ANY DOWNLOAD LIMIT?
                 </AccordionTrigger>
                 <AccordionContent className='text-md'>
                   There is no download limit, download as many times as you need it.
@@ -462,7 +466,7 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger className='font-medium text-lg font-mont'> WHERE DO I PRINT?
+                <AccordionTrigger className='font-medium text-base md:text-lg font-mont'> WHERE DO I PRINT?
                 </AccordionTrigger>
                 <AccordionContent className='text-md'>
                   In some of our listings, there is a Print Template included, this allows you to print at home or you use any online printing service like Avery, PrintsofLove, OnlineLabels, UPrinting etc
@@ -477,7 +481,7 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
 
       {/* Specs End */}
       <section className="dark:bg-gray-900 lg:py-10">
-        <div className="px-4 flex justify-between sm:px-6 lg:px-20 w-full">
+        <div className="px-4 flex  justify-between sm:px-6 lg:px-20 w-full">
           {/* PLEASE NOTE:
   This is a digital product so no physical or printed products will be shipped.
   Colors may vary slightly depending on the computer monitor and printer you decide to use.
@@ -487,8 +491,8 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
   Due to the nature of digital products, all sales are final. However, if you have any issues, please let us know within 7 days of purchase and we will try our best to resolve the issue.
   Convert above to reat beautiful UI
   */}
-          <div className='flex w-full gap-x-6 items-start'>
-            <div className='w-1/2'>
+          <div className='flex flex-col lg:flex-row w-full gap-x-6 items-start'>
+            <div className='w-full lg:w-1/2'>
               <h2 className="text-xl font-bold text-gray-900 sm:text-3xl xl:text-3xl dark:text-white">PLEASE NOTE:
               </h2>
               <p className='text-lg leading-8 mt-2 text-gray-800 dark:text-white'>
@@ -502,7 +506,7 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
 
               </p>
             </div>
-            <div className='w-1/2' id='refund-policy'>
+            <div className='w-full lg:w-1/2 py-16 lg:py-0' id='refund-policy'>
               <h2 className="text-xl font-bold text-gray-900 sm:text-3xl xl:text-3xl dark:text-white">
                 TERMS OF USE
               </h2>
@@ -539,8 +543,8 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
         </div>
       </section>
 
-      <section className='dark:bg-gray-900'> <div className="flex flex-col space-y-0 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center my-10 ">
-        <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="inline-flex justify-center uppercase items-center py-3 px-20 text-xl font-black text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 animate-fade animate-once">
+      <section className='dark:bg-gray-900'> <div className="flex flex-col space-y-0 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center mx-4 my-10 ">
+        <Link href="https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button" className="inline-flex justify-center uppercase items-center py-3 px-10 md:px-20 text-xl font-black text-center text-white rounded-lg bg-gradient-to-r  from-bgv-pink to-bgv-skyblue hover:from-bgv-skyblue hover:to-bgv-pink focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 animate-fade animate-once">
           Grab This Deal Now!
           <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -565,7 +569,7 @@ That&apos;s why we are introducing a remarkable opportunity for you to seize ind
       </section>
       {/* <SubscribeForm/> */}
 
-      <div className='bg-gray-100 py-5 dark:bg-gray-800'><p className='copyrights text-center'>All Rights Reserved &copy; CopyRights 2023 Brands Go Viral
+      <div className='bg-gray-100 py-5 dark:bg-gray-800'><p className='copyrights text-sm md:text-base text-center'>All Rights Reserved &copy; CopyRights 2023 Brands Go Viral
       </p>
 
       </div>

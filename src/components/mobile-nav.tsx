@@ -13,7 +13,8 @@ return (
                   <Link href="/" className="flex items-center">
             <Image src={bgvlogo} alt="Brands Go Viral" className="w-[80px]" />
           </Link>
-   <div className="flex items-center gap-x-4">     <ModeToggle/>
+   <div className="flex items-center gap-x-4">  
+      {/* <ModeToggle/> */}
 <div className="flex md:hidden">
         
       <input type="checkbox" id="drawer-toggle" className="peer sr-only relative hidden"></input>

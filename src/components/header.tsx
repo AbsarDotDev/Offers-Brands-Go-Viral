@@ -11,7 +11,7 @@ export default function Header() {
     <><div className="bg-bgv-skyblue py-2 flex items-center"> 
     <Marquee speed={100}><p className="mr-4 text-white font-bold">NO Questions Asked!! 100% Refund within 7 days after purchase.</p><p className="mr-4 text-white font-bold">NO Questions Asked!! 100% Refund within 7 days after purchase.</p>
     <p className="mr-4 text-white font-bold">NO Questions Asked!! 100% Refund within 7 days after purchase.</p> </Marquee>
-    </div><header className="bg-bgv-pink">
+    </div><header className="bg-bgv-pink hidden lg:block md:block">
       <nav className="border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link href="/" className="flex items-center">
@@ -88,7 +88,7 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <ModeToggle />
+          {/* <ModeToggle /> */}
         </div>
       </nav>
     </header></>
