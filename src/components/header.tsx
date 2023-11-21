@@ -88,8 +88,8 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          {/* <ModeToggle /> */}
-        </div>
+<div></div>    
+</div>
       </nav>
     </header></>
   );

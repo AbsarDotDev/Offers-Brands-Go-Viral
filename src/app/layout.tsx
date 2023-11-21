@@ -9,7 +9,6 @@ import { FacebookPixelEvents } from '../components/pixel-events'
 import StoreInitializer from './store-initializer';
 
 
-
 const inter = Inter({ subsets: ['latin'] })
 const montserrat = localFont({
   src: '../../public/montvar.ttf',
@@ -30,12 +29,12 @@ export default function RootLayout({
   return (
 
     <html lang="en" className={`${inter.className} ${montserrat.className}`}>
+
       <body>
       <StoreInitializer isVisible={false}/>
-
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
 {children} 
-  
+
 <Suspense fallback={null}>
           <FacebookPixelEvents />
         </Suspense>
@@ -43,12 +42,13 @@ export default function RootLayout({
 
  </ThemeProvider>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js" async></script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
  
 
 
 
-</body>
 
+</body>
     </html>
   )
 }

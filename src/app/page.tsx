@@ -106,7 +106,8 @@ export default function Home() {
   ];
 
   return (
-    <><NewsletterModal /><main className='dark:bg-gray-900'>
+    <>
+    <NewsletterModal /><main className='dark:bg-gray-900'>
 
       <div className='sticky top-0 z-[99]'><Header /></div><div className='block md:hidden'><MobileDrawer /></div>
       <Hero />
@@ -283,7 +284,7 @@ export default function Home() {
 
       </section>
       <section className='p-5 py-12 px-4 w-full lg:px-6 dark:bg-gray-900'>
-        <div className=" flex flex-col md:flex-row lg:flex-row gap-10 justify-center items-center md:items-start">
+        <div className=" flex flex-col md:flex-row lg:flex-row gap-10 justify-center items-start md:items-start">
           <h1 className=" mb-2 text-gray-900 font-black  dark:text-white text-3xl">✅  Lifetime Access </h1>
           <h1 className=" mb-2 text-gray-900 font-black dark:text-white text-3xl">✅  Assistance in Editing</h1>
           <h1 className=" mb-2 text-gray-900 font-black dark:text-white text-3xl">✅  Canva Editability</h1>
@@ -362,7 +363,7 @@ export default function Home() {
                   </div>
                   <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                 </div>
-                <div className="mt-3 sm:pr-8">
+                <div className="mt-3 pr-4 md:pr-0">
                   {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
     <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
                   <p className="text-base font-medium text-gray-800 dark:text-gray-400">Minutes after you place your order, you&apos;ll receive a pdf file containing a link.</p>
@@ -391,7 +392,7 @@ export default function Home() {
                   </div>
                   <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                 </div>
-                <div className="mt-3 sm:pr-8">
+                <div className="mt-3 pr-4 md:pr-0">
                   {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
     <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
                   <p className="text-base font-medium text-gray-800 dark:text-gray-400">Customize your details in Canva, save and download</p>
@@ -531,10 +532,12 @@ export default function Home() {
         </div>
 
       </section>
-      <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:to-gray-900 dark:from-gray-800 py-12">
+      <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:to-gray-900 dark:from-gray-800 py-4 md:py-10">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="max-w-screen text-sm text-white sm:text-lg md:text-1xl dark:text-gray-400">
-            <h2 className="mb-6  text-2xl md:text-5xl lg:text-5xl tracking-tight font-extrabold text-black drop-shadow-xl text-center dark:text-white">NO Questions Asked!! 100% Refund within 7 days after purchase.
+          <h2 className="mb-8 text-[40px] md:text-7xl lg:text-6xl uppercase tracking-tight font-extrabold text-black drop-shadow-xl text-center dark:text-white">Refund Policy
+            </h2>
+            <h2 className="mb-2 md:mb-4 text-[17px] md:text-xl lg:text-2xl tracking-normal font-bold text-black drop-shadow-xl text-center dark:text-white italic">NO Questions Asked!! 100% Refund within 7 days after purchase.
             </h2>
             <p className="mb-4 font-bold text-white text-center text-lg md:text-xl lg:text-3xl dark:text-white">No strings attached! Shop freely, and if it&apos;s not your perfect match, rest easy knowing our 100% refund policy has you covered
             </p>
