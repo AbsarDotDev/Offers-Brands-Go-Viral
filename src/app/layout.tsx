@@ -33,6 +33,7 @@ export default function RootLayout({
       <body>
       <StoreInitializer isVisible={false}/>
       <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+  
 {children} 
 
 <Suspense fallback={null}>
@@ -42,11 +43,7 @@ export default function RootLayout({
 
  </ThemeProvider>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js" async></script>
-<script src="https://link.msgsndr.com/js/form_embed.js"></script>
- 
-
-
-
+<script async src="https://link.msgsndr.com/js/form_embed.js"></script>
 
 </body>
     </html>
