@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import { Hero } from '../components/hero'
 import { Cta } from '@/components/cta'
-import { BundleIncludes } from '@/components/bundleincludes'
-import { ModeToggle } from '@/components/darkMode'
 import { Templates } from '@/components/templates'
 import { PiNumberCircleFourFill, PiNumberCircleOneFill, PiNumberCircleThreeFill, PiNumberCircleTwoFill } from "react-icons/pi";
 import Testimonials from '@/components/testimonials'
@@ -13,18 +11,18 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
-import SubscribeForm from '@/components/subscribe-form'
+
 import NewsLetter from '@/components/newsletter'
 import Header from '@/components/header'
 import MobileDrawer from '@/components/mobile-nav'
 import Features from '@/components/features'
 import WebButton from '@/components/web-button'
-import Marquee from 'react-fast-marquee'
-import NewsletterModal from '@/components/newsletter-popup'
+import { headers } from 'next/headers'
+import Script from 'next/script';
+import NewsletterModal from '@/components/newsletter-popup';
 
 export default function Home() {
+  const nonce = headers().get('x-nonce')
 
   const cta = [
     {
@@ -107,7 +105,9 @@ export default function Home() {
 
   return (
     <>
-    <NewsletterModal /><main className='dark:bg-gray-900'>
+
+   <NewsletterModal/>
+    <main className='dark:bg-gray-900'>
 
       <div className='sticky top-0 z-[99]'><Header /></div><div className='block md:hidden'><MobileDrawer /></div>
       <Hero />
@@ -564,11 +564,27 @@ export default function Home() {
             If you have any questions please send us a message or drop us an email at <Link href={'mailto:brandsgoviral@gmail.com'}><b className='text-bgv-skyblue'>brandsgoviral@gmail.com</b></Link>, we&apos;d be glad to help you.</p>
         </div>
       </section>
-      <section className="bg-bgv-pink dark:bg-gray-900 lg:py-10" id='freebie'>
-        <div className="px-4 sm:px-6 lg:px-20 w-full flex flex-col items-center py-10">
-          <NewsLetter />
+      <section className="bg-bgv-pink dark:bg-gray-900 h-[650px] px-10 lg:py-10" id='freebie'>
+        <iframe
+      src="https://api.leadconnectorhq.com/widget/form/Iu6iLL3svBljKNJpKyVs"
+      style={{ width: '100%', height: '650px', border: 'none', borderRadius: '3px' , paddingTop:'40px' }}
+      id="inline-Iu6iLL3svBljKNJpKyVs"
+      data-layout={`{'id':'INLINE'}`}
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Pop Up Email"
+      data-height="521"
+      data-layout-iframe-id="inline-Iu6iLL3svBljKNJpKyVs"
+      data-form-id="Iu6iLL3svBljKNJpKyVs"
+      title="Pop Up Email"
+   
+    />
+          {/* <NewsLetter /> */}
 
-        </div>
       </section>
       {/* <SubscribeForm/> */}
 

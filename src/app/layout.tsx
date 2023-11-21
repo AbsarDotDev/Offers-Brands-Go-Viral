@@ -7,6 +7,7 @@ import localFont from 'next/font/local'
 import { Suspense } from 'react'
 import { FacebookPixelEvents } from '../components/pixel-events'
 import StoreInitializer from './store-initializer';
+import Script from 'next/script';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -43,9 +44,11 @@ export default function RootLayout({
 
  </ThemeProvider>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js" async></script>
-<script async src="https://link.msgsndr.com/js/form_embed.js"></script>
 
 </body>
+{/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
+<Script src="https://link.msgsndr.com/js/form_embed.js" strategy='afterInteractive'/>
+
     </html>
   )
 }

@@ -14,7 +14,7 @@ const NewsletterModal = () => {
     // const isVisible = useStore((state) => state.isVisible);
     const { isVisible , updateIsVisible} = useStore()
 
-  const triggerYOffset = 900;
+  const triggerYOffset = 2000;
   const localStorageKey = 'newsletterPopupShown';
 
   useEffect(() => {
@@ -40,6 +40,8 @@ const NewsletterModal = () => {
     // Set a flag in localStorage to indicate that the popup has been shown
     localStorage.setItem(localStorageKey, 'true');
   };
+
+
   return (
   <>  <div
         className={`fixed top-0 left-0 w-full h-full bg-black opacity-80 z-[99999] ${isVisible ? 'visible' : 'hidden'}`}
@@ -48,7 +50,28 @@ const NewsletterModal = () => {
 <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[99999] w-[80%] rounded-lg'>
 
  <div className={`rounded-lg ${isVisible ? 'visible' : 'hidden'}`}>
-      <div className="modal-content flex flex-col md:flex-row rounded-lg">
+ <iframe
+      src="https://api.leadconnectorhq.com/widget/form/Iu6iLL3svBljKNJpKyVs"
+      style={{ width: '100%', height: '100%', border: 'none', borderRadius: '3px' }}
+      id="inline-Iu6iLL3svBljKNJpKyVs"
+      data-layout={`{'id':'INLINE'}`}
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Pop Up Email"
+      data-height="521"
+      data-layout-iframe-id="inline-Iu6iLL3svBljKNJpKyVs"
+      data-form-id="Iu6iLL3svBljKNJpKyVs"
+      title="Pop Up Email"
+      suppressHydrationWarning
+   
+    />
+               <Button onClick={handleClose} className='absolute right-12 top-2 bg-transparent text-black hover:bg-transparent '><X /></Button>
+
+      {/* <div className="modal-content flex flex-col md:flex-row rounded-lg">
         <div className="modal-image">
       <div className='relative block md:hidden'>
         
@@ -62,7 +85,7 @@ const NewsletterModal = () => {
         <div className='flex flex-col items-end bg-gray-100 dark:bg-gray-80 p-6 rounded-b-lg md:rounded-r-lg md:rounded-b-none md:rounded-br-lg'>
    <Button onClick={handleClose} className='hidden md:block'><X /></Button>
             <NewsLetter/></div>
-      </div>
+      </div> */}
     </div>
     </div></>
   );
