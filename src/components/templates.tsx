@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Button } from './ui/button'
+import Link from 'next/link'
 interface TemplatesProps{
     bundlename:string,
     template:string,
@@ -22,7 +23,7 @@ export const Templates = ({bundlename, template, value,content, image,prd}:Templ
         </h3> 
                <p className="mb-4 font-normal leading-7 text-base text-gray-800 dark:text-white">{content}
         </p>
-<Button variant={'destructive'} className='py-6 text-base px-2 h-[60px] md:h-10 md:text-lg font-extrabold'>Get This Bundle Separately For {value}</Button>
+<Button variant={'destructive'} className='py-6 text-base px-2 h-[60px] md:h-10 md:text-lg font-extrabold'><Link href={`${prd}`}>Get This Bundle Separately For {value}</Link></Button>
 
       </div>
       <div className="lg:w-1/2 justify-self-end w-full mb-8 lg:mb-0 rounded-lg overflow-hidden">

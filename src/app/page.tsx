@@ -60,7 +60,7 @@ export default function Home() {
       value: "$30",
       content: "Looking for stylish and contemporary cosmetic packaging? Your search ends here! This bundle offers a variety of packaging templates, Soap, Lip Balm, Hand Sanitizer, Candles, Pouches, Cream Jars and Lids, Roller Bottles, Dropper Bottles, Cosmo Spray Bottles, and nearly every cosmetic bottle type. And that's not all – you will also receive print templates and complimentary cosmetic icons to complete the package.      ",
       image: "/bundles/Cosmetic Bundle.png",
-      prd: "https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button"
+      prd: "https://brandsgoviral.myshopify.com/cart/47154589139232:1?channel=buy_button"
 
     },
     {
@@ -69,7 +69,7 @@ export default function Home() {
       value: "$40",
       content: "This bundle includes all the essential forms you need to run your esthetician or salon business hustle-free, including a client consultation form, client intake form, treatment consent form, client release form, aftercare instructions, of various treatments like facial, waxing, eyelash extensions, lash lift and tint, Microdermabrasion, permanent makeup, spray tanning, chemical peel, LED Light Therapy, Aromatherapy, Microblading, Dermaplaning, Laser Skin Rejuvenation, Body Sculpting, Brow treatments, Acne treatments etc and so many bonuses like skin patch testing forms, appointment cancellation forms, email sign-up form, Covid-19 Liability Waiver Form, Photo Release Form, Weekly Appointment Tracker, Business Income Tracker, Client Treatment Record Form, Client Service History Form, Parental Consent Form, Model Release form, Salon Booth Lease Agreement, etc",
       image: "/bundles/Forms.png",
-      prd: "https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button"
+      prd: "https://brandsgoviral.myshopify.com/cart/47154805801248:1?channel=buy_button"
 
 
     },
@@ -79,7 +79,7 @@ export default function Home() {
       value: "$40",
       content: "Esthetician Instagram bundle includes a huge variety of Instagram posts, highlight covers, and story templates. It offers a variety of ready-to-post content, expert skincare tips, scientific advice, engaging quotes, infographics, memes, gifs, and much more.",
       image: "/bundles/Instagram Templates.png",
-      prd: "https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button"
+      prd: "https://brandsgoviral.myshopify.com/cart/47154841256224:1?channel=buy_button"
 
 
     },
@@ -89,7 +89,7 @@ export default function Home() {
       value: "$40",
       content: " This bundle includes everything you need before starting any business. It includes templates of Thank you cards, Loyalty cards, Business cards, Address labels, Idea mood boards, Letterhead, Invoice, Facebook headers, Twitter headers, Youtube headers, Etsy headers, Instagram posts, stories, highlight covers, Product tags, Packaging Stickers, Email signature, Price list, Gift card, Envelope, PremadeLogos, etc.",
       image: "/bundles/Business Branding Kit.png",
-      prd: "https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button"
+      prd: "https://brandsgoviral.myshopify.com/cart/47154639012128:1?channel=buy_button"
 
 
     },
@@ -99,14 +99,15 @@ export default function Home() {
       value: "$30",
       content: "Initiated your desired business but need help to keep it up with this? This mega bundle also includes a detailed business planner to plan your business and keep track of all the expenses and profits. This mega business planner covers everything from Business Goals, Product Planning, Competitor Analysis, Market Research, Shipping Tracker, Advertising Tracker, Discounts Tracker, Giveaway Trackers, Order Tracker, etc to SWOT Analysis, Cost & Profit Tracker, Sales and Profit Projection, Social Media Planner, Content Planner, Affiliate Planner, Hashtags and Keyword Research, Product launch Calendar and Plan, Trends and Growth, Our Selling Point and Strategies, etc and much more!",
       image: "/bundles/Planners.png",
-      prd: "https://brandsgoviral.myshopify.com/cart/46879491391776:1?channel=buy_button"
+      prd: "https://brandsgoviral.myshopify.com/cart/47154891718944:1?channel=buy_button"
 
 
     },
   ];
 
   return (
-    <><NewsletterModal /><main className='dark:bg-gray-900'>
+    <>
+    <NewsletterModal /><main className='dark:bg-gray-900'>
 
       <div className='sticky top-0 z-[99]'><Header /></div><div className='block md:hidden'><MobileDrawer /></div>
       <Hero />
@@ -283,7 +284,7 @@ export default function Home() {
 
       </section>
       <section className='p-5 py-12 px-4 w-full lg:px-6 dark:bg-gray-900'>
-        <div className=" flex flex-col md:flex-row lg:flex-row gap-10 justify-center items-center md:items-start">
+        <div className=" flex flex-col md:flex-row lg:flex-row gap-10 justify-center items-start md:items-start">
           <h1 className=" mb-2 text-gray-900 font-black  dark:text-white text-3xl">✅  Lifetime Access </h1>
           <h1 className=" mb-2 text-gray-900 font-black dark:text-white text-3xl">✅  Assistance in Editing</h1>
           <h1 className=" mb-2 text-gray-900 font-black dark:text-white text-3xl">✅  Canva Editability</h1>
@@ -362,7 +363,7 @@ export default function Home() {
                   </div>
                   <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                 </div>
-                <div className="mt-3 sm:pr-8">
+                <div className="mt-3 pr-4 md:pr-0">
                   {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
     <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
                   <p className="text-base font-medium text-gray-800 dark:text-gray-400">Minutes after you place your order, you&apos;ll receive a pdf file containing a link.</p>
@@ -391,7 +392,7 @@ export default function Home() {
                   </div>
                   <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                 </div>
-                <div className="mt-3 sm:pr-8">
+                <div className="mt-3 pr-4 md:pr-0">
                   {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
     <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time> */}
                   <p className="text-base font-medium text-gray-800 dark:text-gray-400">Customize your details in Canva, save and download</p>
@@ -531,10 +532,12 @@ export default function Home() {
         </div>
 
       </section>
-      <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:to-gray-900 dark:from-gray-800 py-12">
+      <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:to-gray-900 dark:from-gray-800 py-4 md:py-10">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="max-w-screen text-sm text-white sm:text-lg md:text-1xl dark:text-gray-400">
-            <h2 className="mb-6  text-2xl md:text-5xl lg:text-5xl tracking-tight font-extrabold text-black drop-shadow-xl text-center dark:text-white">NO Questions Asked!! 100% Refund within 7 days after purchase.
+          <h2 className="mb-8 text-[40px] md:text-7xl lg:text-6xl uppercase tracking-tight font-extrabold text-black drop-shadow-xl text-center dark:text-white">Refund Policy
+            </h2>
+            <h2 className="mb-2 md:mb-4 text-[17px] md:text-xl lg:text-2xl tracking-normal font-bold text-black drop-shadow-xl text-center dark:text-white italic">NO Questions Asked!! 100% Refund within 7 days after purchase.
             </h2>
             <p className="mb-4 font-bold text-white text-center text-lg md:text-xl lg:text-3xl dark:text-white">No strings attached! Shop freely, and if it&apos;s not your perfect match, rest easy knowing our 100% refund policy has you covered
             </p>
