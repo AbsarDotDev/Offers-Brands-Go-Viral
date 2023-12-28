@@ -2,7 +2,6 @@
 import React from 'react'
 import { Button } from './ui/button';
 export default function WebButton({text, withoutBg, style}: {text: string, withoutBg?:string, style?:string}){
-    console.log(withoutBg);
 return <Button
 onClick={() => {
     import("react-facebook-pixel")

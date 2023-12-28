@@ -44,7 +44,18 @@ export default function RootLayout({
 
  </ThemeProvider>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js" async></script>
+<Script id="ms_clarity"
+dangerouslySetInnerHTML={
+  {
+    __html:`(function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "kct8i5h9nt");`
+  }
+}
 
+/>
 </body>
 {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
 <Script src="https://link.msgsndr.com/js/form_embed.js" strategy='afterInteractive'/>

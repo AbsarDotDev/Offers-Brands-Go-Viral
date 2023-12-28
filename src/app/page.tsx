@@ -20,6 +20,7 @@ import WebButton from '@/components/web-button'
 import { headers } from 'next/headers'
 import Script from 'next/script';
 import NewsletterModal from '@/components/newsletter-popup';
+import StickyBaner from '@/components/sticky_banner';
 
 export default function Home() {
   const nonce = headers().get('x-nonce')
@@ -108,8 +109,13 @@ export default function Home() {
 
    <NewsletterModal/>
     <main className='dark:bg-gray-900'>
-
-      <div className='sticky top-0 z-[99]'><Header /></div><div className='block md:hidden'><MobileDrawer /></div>
+<StickyBaner/>
+      {/* <div className='sticky top-0 z-[99]'> */}
+        <Header />
+        {/* </div> */}
+        <div className='block md:hidden'>
+          <MobileDrawer />
+        </div>
       <Hero />
       <section className="bg-gradient-to-r from-bgv-pink to-bgv-skyblue dark:to-gray-900 dark:from-gray-900 py-12">
         <div className="max-w-4xl mx-auto px-4">
@@ -300,7 +306,7 @@ export default function Home() {
         <h1 className="mb-4 text-4xl text-center font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">YOU WILL GET THIS JUST IN
           <span className="text-transparent bg-clip-text bg-gradient-to-r to-bgv-pink from-bgv-skyblue"> $99 </span>
         </h1>
-        <h1 className="mb-4  text-center text-4xl font-extrabold tracking-tight leading-none text-red-600 md:text-5xl lg:text-6xl ">Only valid till 25th December.
+        <h1 className="mb-4  text-center text-4xl font-extrabold tracking-tight leading-none text-red-600 md:text-5xl lg:text-6xl ">Only valid till 31st December.
         </h1>
 
       </section>

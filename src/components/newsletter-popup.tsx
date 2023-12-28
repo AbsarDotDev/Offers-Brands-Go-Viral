@@ -69,23 +69,8 @@ const NewsletterModal = () => {
       suppressHydrationWarning
    
     />
-               <Button onClick={handleClose} className='absolute right-12 top-2 bg-transparent text-black hover:bg-transparent '><X /></Button>
+               <Button onClick={handleClose} className='absolute right-0 top-2 bg-transparent text-black md:text-white hover:bg-transparent '><X /></Button>
 
-      {/* <div className="modal-content flex flex-col md:flex-row rounded-lg">
-        <div className="modal-image">
-      <div className='relative block md:hidden'>
-        
-           <Button onClick={handleClose} className='absolute right-0 top-2 bg-transparent text-black hover:bg-transparent'><X /></Button>
-<Image src={newspopupImageMobile}  alt="Newsletter"  className='h-full bg-gray-300 rounded-t-lg'/></div>
-
-
-<Image src={newspopupImageDesktop} alt="Newsletter"  className='h-full rounded-l-lg hidden md:block'/>
-
-        </div>
-        <div className='flex flex-col items-end bg-gray-100 dark:bg-gray-80 p-6 rounded-b-lg md:rounded-r-lg md:rounded-b-none md:rounded-br-lg'>
-   <Button onClick={handleClose} className='hidden md:block'><X /></Button>
-            <NewsLetter/></div>
-      </div> */}
     </div>
     </div></>
   );
