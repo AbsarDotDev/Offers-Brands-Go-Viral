@@ -106,7 +106,15 @@ export default function Home() {
 
   return (
     <>
-
+<div
+  data-chat-widget
+  data-location-id="JPpvv5appViNRP7rtLHp"
+  data-prompt-msg="Hi, Its Tiana, let me know if you have any questions. I am happy to answer all your queries :)" 
+  data-revisit-prompt-msg="Welcome back ${name}, Looks like you need a demo of this product that how it works?" 
+  data-agency-name="Brands Go Viral" 
+  data-agency-website="https://brandsgoviral.com/" 
+  data-locale="en-us" >
+</div>
    <NewsletterModal/>
     <main className='dark:bg-gray-900'>
 <StickyBaner/>

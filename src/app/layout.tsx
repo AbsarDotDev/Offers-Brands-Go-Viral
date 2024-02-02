@@ -59,6 +59,9 @@ dangerouslySetInnerHTML={
 </body>
 {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
 <Script src="https://link.msgsndr.com/js/form_embed.js" strategy='afterInteractive'/>
+<Script
+  src="https://widgets.leadconnectorhq.com/loader.js" 
+  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" />
 
     </html>
   )
